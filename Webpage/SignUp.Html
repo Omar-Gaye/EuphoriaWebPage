@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Euphoria - SignUp</title>
+    <link rel="stylesheet" href="../StylesCss/SignUp.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- En-tête -->
+    <header class="entete">
+        <div class="contenu-entete">
+            <!-- Logo -->
+            <div class="section-logo">
+                <img src="../Images/logo.png" alt="Logo Euphoria" class="logo">
+            </div>
+
+            <!-- Barre de recherche -->
+            <div class="conteneur-recherche">
+                <div class="boite-recherche">
+                    <svg class="icone-recherche" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input type="text" placeholder="Rechercher" class="champ-recherche">
+                </div>
+            </div>
+
+            <!-- Section droite de l'en-tête -->
+            <div class="entete-droite">
+                <!-- Sélecteur de langue -->
+                <div class="selecteur-langue">
+                    <span>Français (France)</span>
+                    <svg class="chevron-bas" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6,9 12,15 18,9"></polyline>
+                    </svg>
+                </div>
+
+                <!-- Bouton Connexion -->
+                <button class="btn btn-primaire">Login</button>
+
+                <!-- Bouton Inscription -->
+                <button class="btn btn-contour">SignUp</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenu principal -->
+    <div class="conteneur-principal">
+        <!-- Côté gauche - Image -->
+        <div class="section-image">
+            <img src="../Images/SignUp.jpg" alt="Mannequins de mode" class="image-hero">
+        </div>
+
+        <!-- Côté droit - Formulaire de connexion -->
+        <div class="section-formulaire">
+            <div class="conteneur-formulaire">
+                <h2 class="titre-formulaire">Sign Up</h2>
+                <p>Sign up for free to access to in any of our products</p>
+
+                <!-- Boutons de connexion sociale -->
+                <div class="boutons-sociaux">
+                    <button class="btn-social" id="boutonGoogle">
+                        <span class="icone-google">G</span>
+                        <span>Continue With Google</span>
+                    </button>
+
+                    <button class="btn-social" id="boutonTwitter">
+                        <span class="icone-twitter">🐦</span>
+                        <span>Continue With Twitter</span>
+                    </button>
+                </div>
+
+                <!-- Formulaire de connexion -->
+                <form class="formulaire-connexion" id="formulaireConnexion">
+                    <div class="groupe-formulaire">
+                        <label for="email" class="label-formulaire">Email Address</label>
+                        <input type="email" id="email" name="email" class="champ-formulaire" 
+                               placeholder="designer@gmail.com" required>
+                    </div>
+
+                    <div class="groupe-formulaire">
+                        <label for="motDePasse" class="label-formulaire">Password</label>
+                        <div class="conteneur-mot-de-passe">
+                            <input type="password" id="motDePasse" name="motDePasse" class="champ-formulaire" 
+                                   placeholder="Entrez votre mot de passe" required>
+                            <button type="button" class="bascule-mot-de-passe" id="basculeMotDePasse">
+                                <svg class="icone-oeil" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                </svg>
+                            </button>
+                        </div>
+                        <p>Use 8 or more characters with a mix of letters,numbers & symbols</p>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Agree to our <span style="text-decoration: underline;">Terms of use</span> and <span style="text-decoration: underline;">Privacy Policy</span>
+                        </label>
+                        </div>
+                        <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Subscripe to our monthly newsletter
+                        </label>
+                        </div>
+                    <button type="submit" class="btn btn-primaire btn-pleine-largeur" id="boutonConnexion">
+                        <span class="texte-btn">SignUp</span>
+                        <span class="indicateur-chargement" style="display: none;">Connexion...</span>
+                    </button>
+                </form>
+
+                <!-- Lien d'inscription -->
+                <div class="lien-inscription">
+                    <span>Already have an account? </span>
+                    <button type="button" class="lien-btn" id="lienInscription">log in</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay de chargement -->
+    <div class="overlay-chargement" id="overlayChargement" style="display: none;">
+        <div class="contenu-chargement">
+            <div class="spinner"></div>
+            <p>Connexion en cours...</p>
+        </div>
+    </div>
+
+    <!-- Messages de succès/erreur -->
+    <div class="notification" id="notification" style="display: none;">
+        <div class="contenu-notification">
+            <span class="message-notification" id="messageNotification"></span>
+            <button class="fermer-notification" id="fermerNotification">&times;</button>
+        </div>
+    </div>
+
+    <script>
+        // Fonctionnalité d'affichage/masquage du mot de passe
+        document.getElementById('basculeMotDePasse').addEventListener('click', function() {
+            const champMotDePasse = document.getElementById('motDePasse');
+            const type = champMotDePasse.getAttribute('type') === 'password' ? 'text' : 'password';
+            champMotDePasse.setAttribute('type', type);
+            
+            // Animation de l'icône
+            this.classList.toggle('active');
+        });
+
+        // Simulation de connexion
+        document.getElementById('formulaireConnexion').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Afficher l'overlay de chargement
+            document.getElementById('overlayChargement').style.display = 'flex';
+            
+            // Simuler un délai de connexion
+            setTimeout(function() {
+                // Cacher l'overlay de chargement
+                document.getElementById('overlayChargement').style.display = 'none';
+                
+                // Afficher un message de succès
+                const notification = document.getElementById('notification');
+                document.getElementById('messageNotification').textContent = 'Connexion réussie!';
+                notification.style.display = 'block';
+                
+                // Cacher la notification après 3 secondes
+                setTimeout(function() {
+                    notification.style.display = 'none';
+                }, 3000);
+            }, 2000);
+        });
+
+        // Fermeture de la notification
+        document.getElementById('fermerNotification').addEventListener('click', function() {
+            document.getElementById('notification').style.display = 'none';
+        });
+    </script>
+</body>
+</html>

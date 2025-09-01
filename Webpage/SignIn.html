@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Euphoria - SignIn</title>
+    <link rel="stylesheet" href="../StylesCss/SignUp.css">
+</head>
+<body>
+    <!-- En-tête -->
+    <header class="entete">
+        <div class="contenu-entete">
+            <!-- Logo -->
+            <div class="section-logo">
+                <img src="../Images/logo.png" alt="Logo Euphoria" class="logo">
+            </div>
+
+            <!-- Barre de recherche -->
+            <div class="conteneur-recherche">
+                <div class="boite-recherche">
+                    <svg class="icone-recherche" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input type="text" placeholder="Rechercher" class="champ-recherche">
+                </div>
+            </div>
+
+            <!-- Section droite de l'en-tête -->
+            <div class="entete-droite">
+                <!-- Sélecteur de langue -->
+                <div class="selecteur-langue">
+                    <span>Français (France)</span>
+                    <svg class="chevron-bas" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6,9 12,15 18,9"></polyline>
+                    </svg>
+                </div>
+
+                <!-- Bouton Connexion -->
+                <button class="btn btn-primaire">Login</button>
+
+                <!-- Bouton Inscription -->
+                <button class="btn btn-contour">Sign Up</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenu principal -->
+    <div class="conteneur-principal">
+        <!-- Côté gauche - Image -->
+        <div class="section-image">
+            <img src="../Images/SignIn.jpg" alt="Mannequins de mode" class="image-hero">
+        </div>
+
+        <!-- Côté droit - Formulaire de connexion -->
+        <div class="section-formulaire">
+            <div class="conteneur-formulaire">
+                <h2 class="titre-formulaire">SignIn Page</h2>
+
+                <!-- Boutons de connexion sociale -->
+                <div class="boutons-sociaux">
+                    <button class="btn-social" id="boutonGoogle">
+                        <span class="icone-google">G</span>
+                        <span>Continue with Google</span>
+                    </button>
+
+                    <button class="btn-social" id="boutonTwitter">
+                        <span class="icone-twitter">🐦</span>
+                        <span>Continue with Twitter</span>
+                    </button>
+                </div>
+
+                <!-- Séparateur -->
+                <div class="separateur">
+                    <hr class="ligne-separateur">
+                    <span class="texte-separateur">OU</span>
+                    <hr class="ligne-separateur">
+                </div>
+
+                <!-- Formulaire de connexion -->
+                <form class="formulaire-connexion" id="formulaireConnexion">
+                    <div class="groupe-formulaire">
+                        <label for="email" class="label-formulaire">User name or email address </label>
+                        <input type="email" id="email" name="email" class="champ-formulaire" 
+                               placeholder="Entrez votre e-mail" required>
+                    </div>
+
+                    <div class="groupe-formulaire">
+                        <label for="motDePasse" class="label-formulaire">Password</label>
+                        <div class="conteneur-mot-de-passe">
+                            <input type="password" id="motDePasse" name="motDePasse" class="champ-formulaire" 
+                                   placeholder="Entrez votre mot de passe" required>
+                            <button type="button" class="bascule-mot-de-passe" id="basculeMotDePasse">
+                                <svg class="icone-oeil" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                </svg>
+                            </button>
+                        </div>
+                        
+                        <div class="mot-de-passe-oublie">
+                            <button type="button" class="lien-oublie">Forget your password</button>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primaire btn-pleine-largeur" id="boutonConnexion">
+                        <span class="texte-btn">Sign In</span>
+                        <span class="indicateur-chargement" style="display: none;">Connexion...</span>
+                    </button>
+                </form>
+
+                <!-- Lien d'inscription -->
+                <div class="lien-inscription">
+                    <span>Don't have an account? </span>
+                    <button type="button" class="lien-btn" id="lienInscription">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
