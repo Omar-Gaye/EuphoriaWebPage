@@ -63,9 +63,348 @@
     </header>
 
     <!-- Main Content -->
-        <main>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat quas sint omnis optio autem? Perferendis, harum laudantium aspernatur dolor hic eaque. Quos exercitationem culpa voluptatibus. Et commodi assumenda excepturi eligendi.</p>
-        </main>
+        <main class="main-content container">
+    <aside class="sidebar-filter">
+        <div class="filter-section">
+            <div class="filter-header">
+                <h3>Filter</h3>
+                <span class="icon">›</span>
+            </div>
+        </div>
+
+        <div class="filter-section">
+            <h4>Tops</h4>
+            <ul class="filter-list">
+                <li><a href="#">T-shirts</a></li>
+                <li><a href="#">Printed T-shirts</a></li>
+                <li><a href="#">Plain T-shirts</a></li>
+                <li><a href="#">Kurtis</a></li>
+                <li><a href="#">Boxers</a></li>
+                <li><a href="#">Full sleeve T-shirts</a></li>
+                <li><a href="#">Joggers</a></li>
+                <li><a href="#">Pyjamas</a></li>
+                <li><a href="#">Jeans</a></li>
+            </ul>
+        </div>
+        
+        <div class="filter-section">
+            <h4>Price</h4>
+            <div class="price-range">
+                <input type="range" min="50" max="1000" value="70">
+                <input type="range" min="50" max="1000" value="500">
+                <div class="price-values">
+                    <span>$70</span>
+                    <span>$500</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="filter-section">
+            <h4>Colors</h4>
+            <div class="color-options">
+                <div class="color-item black active"></div>
+                <div class="color-item red"></div>
+                <div class="color-item orange"></div>
+                <div class="color-item purple"></div>
+                <div class="color-item black"></div>
+                <div class="color-item red"></div>
+                <div class="color-item orange"></div>
+                <div class="color-item purple"></div>
+                <div class="color-item navy"></div>
+                <div class="color-item white"></div>
+                <div class="color-item gray"></div>
+                <div class="color-item green"></div>
+                <div class="color-item yellow"></div>
+                <div class="color-item gray"></div>
+                <div class="color-item blue"></div>
+            </div>
+        </div>
+        
+        <div class="filter-section">
+            <h4>Size</h4>
+            <div class="size-options">
+                <button class="size-btn">XXS</button>
+                <button class="size-btn">XL</button>
+                <button class="size-btn">XS</button>
+                <button class="size-btn">S</button>
+                <button class="size-btn">M</button>
+                <button class="size-btn">L</button>
+                <button class="size-btn">XXL</button>
+                <button class="size-btn">3XL</button>
+                <button class="size-btn">4XL</button>
+            </div>
+        </div>
+
+        <div class="filter-section">
+            <h4>Dress Style</h4>
+            <ul class="filter-list">
+                <li><a href="#">Casual</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Sport</a></li>
+                <li><a href="#">Elegant</a></li>
+                <li><a href="#">Formal (evening)</a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <div class="products-container">
+        <div class="products-header">
+            <h2 class="title">Women's Clothing</h2>
+            <div class="product-sort">
+                <a href="#" class="sort-link new active">New</a>
+                <a href="#" class="sort-link recommended">Recommended</a>
+            </div>
+        </div>
+        
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://picsum.photos/id/1014/400/400" alt="Black Sweatshirt">
+                    <button class="favorite-btn" aria-label="Add to favorites">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+                    <div class="price-tag">$123.00</div>
+                </div>
+                <h3 class="product-name">Black Sweatshirt with...</h3>
+                <p class="product-brand">_&_Brand</p>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://picsum.photos/id/1015/400/400" alt="White T-shirt">
+                    <button class="favorite-btn" aria-label="Add to favorites">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+                    <div class="price-tag">$51.00</div>
+                </div>
+                <h3 class="product-name">White T-shirt</h3>
+                <p class="product-brand">_&_Brand</p>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://picsum.photos/id/1016/400/400" alt="Lavender Hoodie">
+                    <button class="favorite-btn" aria-label="Add to favorites">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+                    <div class="price-tag">$89.00</div>
+                </div>
+                <h3 class="product-name">Lavender Hoodie with...</h3>
+                <p class="product-brand">_&_Brand</p>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://picsum.photos/id/1018/400/400" alt="Leaves Pattern White">
+                    <button class="favorite-btn" aria-label="Add to favorites">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+                    <div class="price-tag">$77.00</div>
+                </div>
+                <h3 class="product-name">Leaves Pattern White...</h3>
+                <p class="product-brand">_&_Brand</p>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://picsum.photos/id/1019/400/400" alt="White Graphic Crop Top">
+                    <button class="favorite-btn" aria-label="Add to favorites">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+                    <div class="price-tag">$39.00</div>
+                </div>
+                <h3 class="product-name">White Graphic Crop Top</h3>
+                <p class="product-brand">_&_Brand</p>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://picsum.photos/id/1020/400/400" alt="Black Shorts">
+                    <button class="favorite-btn" aria-label="Add to favorites">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+                    <div class="price-tag">$51.00</div>
+                </div>
+                <h3 class="product-name">Black Shorts</h3>
+                <p class="product-brand">_&_Brand</p>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://picsum.photos/id/1025/400/400" alt="Grey Sweatshirt">
+                    <button class="favorite-btn" aria-label="Add to favorites">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+                    <div class="price-tag">$77.00</div>
+                </div>
+                <h3 class="product-name">Barbarani Grey Sweat...</h3>
+                <p class="product-brand">_&_Brand</p>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://picsum.photos/id/1027/400/400" alt="Yellow Sweatshirt">
+                    <button class="favorite-btn" aria-label="Add to favorites">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+                    <div class="price-tag">$29.00</div>
+                </div>
+                <h3 class="product-name">Yellow Sweatshirt</h3>
+                <p class="product-brand">_&_Brand</p>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://picsum.photos/id/1031/400/400" alt="Flower Pattern Black T-shirt">
+                    <button class="favorite-btn" aria-label="Add to favorites">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+                    <div class="price-tag">$31.00</div>
+                </div>
+                <h3 class="product-name">Flower Pattern Black C...</h3>
+                <p class="product-brand">_&_Brand</p>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://picsum.photos/id/1032/400/400" alt="Don't Graphic T-shirt">
+                    <button class="favorite-btn" aria-label="Add to favorites">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+                    <div class="price-tag">$77.00</div>
+                </div>
+                <h3 class="product-name">I Don't Graphic T-shirt</h3>
+                <p class="product-brand">_&_Brand</p>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://picsum.photos/id/1033/400/400" alt="Blue Flower Print Crop">
+                    <button class="favorite-btn" aria-label="Add to favorites">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+                    <div class="price-tag">$29.00</div>
+                </div>
+                <h3 class="product-name">Blue Flower Print Crop</h3>
+                <p class="product-brand">_&_Brand</p>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://picsum.photos/id/1034/400/400" alt="Line Pattern Black H">
+                    <button class="favorite-btn" aria-label="Add to favorites">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+                    <div class="price-tag">$39.00</div>
+                </div>
+                <h3 class="product-name">Line Pattern Black H...</h3>
+                <p class="product-brand">_&_Brand</p>
+            </div>
+
+        </div>
+    </div>
+</main>
+<br>
+     <div>
+        <section class="text-section container">
+        <h2 class="section-title">Clothing for Women Online in India</h2>
+        <p class="section-subtitle">Reexplore Women's Clothing Collection Online at Euphoria</p>
+        <div class="section-content">
+            <p>Women's Clothing - Are you searching for the best website to buy Clothing for Women online in India? Well, your search for the coolest and most stylish women's clothing ends here. From trendy Casual Women's Wear Online shopping to premium quality cotton women's apparel. **Euphoria** has closet of Women Collection covered with the latest and best designs of Women's Clothing Online.</p>
+            <p>Our collection of clothes for women will make you the trendsetter with an iconic resemblance of choice in Women's Wear.</p>
+            <p><strong>One-Stop Destination to Shop Every Clothing for Women: Euphoria</strong></p>
+            <p>Today, Clothing for Women is gaining more popularity above all. This is because gone are the days when women were used to carrying uncomfortable fashion. Today, a lady looks prettier when she is in Casual Women's Wear which is a comfortable outfit. Concerning this, **Euphoria** has a big fat range of Stylish Women's Clothing that would make her the winner wherever she goes.</p>
+            <p>Our collection of clothes for women will make you the trendsetter with an iconic resemblance of choice in Women's Wear. It is quite evident to say that there are very few Women's Clothing online stores where you can buy Western Wear for Women comprising the premium material and elegant design that you are always seeking for. Basically.</p>
+        </div>
+        <a href="#" class="see-more">See More</a>
+    </section>
+
+    <section class="price-section container">
+        <h2 class="section-title">Buy Women's Clothing at Best Price</h2>
+        <table class="price-table">
+            <thead>
+                <tr>
+                    <th>Women's Clothing</th>
+                    <th>Best Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pick Any 4 - Womens Plain T-shirt Combo</td>
+                    <td>₹1099</td>
+                </tr>
+                <tr>
+                    <td>Pick Any 4 - Plain Womens Boxer Combo</td>
+                    <td>₹1099</td>
+                </tr>
+                <tr>
+                    <td>Pick Any 4 - Women Plain Full Sleeve T-shirt Combo</td>
+                    <td>₹1599</td>
+                </tr>
+                <tr>
+                    <td>Multicolor Checkered Long Casual Shirts for Women</td>
+                    <td>₹499</td>
+                </tr>
+                <tr>
+                    <td>Pick Any 2 Plain Boxy Casual Shirts for Women Combo</td>
+                    <td>₹799</td>
+                </tr>
+                <tr>
+                    <td>Blue Floral Anarkali Kurti</td>
+                    <td>₹599</td>
+                </tr>
+                <tr>
+                    <td>Jade Black Narrow Cut Flexible Women Jeggings</td>
+                    <td>₹998</td>
+                </tr>
+                <tr>
+                    <td>Mustard-yellow Solid Straight-Fit Women Pant</td>
+                    <td>₹499</td>
+                </tr>
+                <tr>
+                    <td>Women Pants Combo - Pick Any 2</td>
+                    <td>₹800</td>
+                </tr>
+                <tr>
+                    <td>Pista Green Solid Boxy Casual Shirts for Women</td>
+                    <td>₹449</td>
+                </tr>
+                <tr>
+                    <td>Plain Burgundy Womens Boxer</td>
+                    <td>₹349</td>
+                </tr>
+                <tr>
+                    <td>Striped Front Tie Casual Shirts for Women</td>
+                    <td>₹449</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    </div>
 
         
         <!-- Footer Section -->

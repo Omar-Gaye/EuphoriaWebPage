@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="../StylesCss/Emptywishlist.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!-- Header -->
     <header class="header">
@@ -28,7 +30,8 @@
             <!-- Search Bar -->
             <div class="search-container" aria-hidden="false">
                 <div class="search-box">
-                    <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" aria-hidden="true">
                         <circle cx="11" cy="11" r="8"></circle>
                         <path d="m21 21-4.35-4.35"></path>
                     </svg>
@@ -40,20 +43,26 @@
             <div class="header-right">
                 <!-- Icons -->
                 <button class="icon-btn" type="button" aria-label="Wishlist">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        aria-hidden="true">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                        </path>
                     </svg>
                 </button>
                 <button class="icon-btn" type="button" aria-label="Account">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        aria-hidden="true">
                         <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
                         <circle cx="8.5" cy="7" r="4"></circle>
                         <line x1="20" y1="8" x2="20" y2="14"></line>
                         <line x1="23" y1="11" x2="17" y2="11"></line>
                     </svg>
                 </button>
-                <button class="icon-btn cart-btn" type="button" id="openCart" aria-label="Open shopping cart" aria-haspopup="dialog" aria-controls="cartSidebar">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <button class="icon-btn cart-btn" type="button" id="openCart" aria-label="Open shopping cart"
+                    aria-haspopup="dialog" aria-controls="cartSidebar">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        aria-hidden="true">
                         <path d="M3 3h2l.4 2M7 13h10l4-8H5.4m1.6 8L6 9H4m3 4h10v7H7v-7z"></path>
                     </svg>
                     <span class="cart-count" aria-live="polite" aria-atomic="true">0</span>
@@ -63,80 +72,213 @@
     </header>
 
     <!-- Main Content -->
-        <main>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat quas sint omnis optio autem? Perferendis, harum laudantium aspernatur dolor hic eaque. Quos exercitationem culpa voluptatibus. Et commodi assumenda excepturi eligendi.</p>
-        </main>
+    <main class="my-account-page">
+        <div class="my-account-container container">
+            <aside class="account-sidebar">
+                <div class="sidebar-header">
+                    <h3>Hello Jhanvi</h3>
+                    <p>Welcome to your Account</p>
+                </div>
+                <nav class="sidebar-nav">
+                    <ul>
+                        <li><a href="#" class="nav-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <path
+                                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z">
+                                    </path>
+                                </svg>My orders</a></li>
+                        <li><a href="#" class="nav-link active"><svg width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <path
+                                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                    </path>
+                                </svg>Wishlist</a></li>
+                        <li><a href="#" class="nav-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="8.5" cy="7" r="4"></circle>
+                                    <line x1="20" y1="8" x2="20" y2="14"></line>
+                                    <line x1="23" y1="11" x2="17" y2="11"></line>
+                                </svg>My Info</a></li>
+                        <li><a href="#" class="nav-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                                    <polyline points="16 17 21 12 16 7"></polyline>
+                                    <line x1="21" y1="12" x2="9" y2="12"></line>
+                                </svg>Sign out</a></li>
+                    </ul>
+                </nav>
+            </aside>
 
-        
-        <!-- Footer Section -->
-   <footer class="footer">
-    <div class="footer-top">
-        <div class="footer-section">
-            <h4>Need Help</h4>
-            <ul>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Track Order</a></li>
-                <li><a href="#">Returns & Refunds</a></li>
-                <li><a href="#">FAQ's</a></li>
-                <li><a href="#">Career</a></li>
-            </ul>
-        </div>
-        <div class="footer-section">
-            <h4>Company</h4>
-            <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">euphoria Blog</a></li>
-                <li><a href="#">euphoriastan</a></li>
-                <li><a href="#">Collaboration</a></li>
-                <li><a href="#">Media</a></li>
-            </ul>
-        </div>
-        <div class="footer-section">
-            <h4>More Info</h4>
-            <ul>
-                <li><a href="#">Term and Conditions</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Shipping Policy</a></li>
-                <li><a href="#">Sitemap</a></li>
-            </ul>
-        </div>
-        <div class="footer-section">
-            <h4>Location</h4>
-            <p>support@euphoria.in</p>
-            <p>Eklingpura Chouraha, Ahmedabad Main Road</p>
-            <p>(NH 8- Near Mahadev Hotell Udaipur, India- 313002</p>
-            <div class="download-app">
-                <h4>Download The App</h4>
-                <a href="#">
-                    <img src="https://via.placeholder.com/20" alt="Google Play logo">
-                    <div>
-                        <span>android app on</span>
-                        <span>Google Play</span>
+            <section class="my-info-content wishlist-content">
+                <h2 class="main-title">Wishlist</h2>
+                <div class="empty-wishlist-message">
+                    <div class="heart-icon-container">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon">
+                            <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                            </path>
+                        </svg>
                     </div>
-                </a>
-                <a href="#">
-                    <img src="https://via.placeholder.com/20" alt="App Store logo">
-                    <div>
-                        <span>Available on the</span>
-                        <span>App Store</span>
+                    <h3 class="empty-title">Your wishlist is empty.</h3>
+                    <p class="empty-text">You don't have any products in the wishlist yet. You will find a lot of
+                        interesting products on our Shop page.</p>
+                    <button class="continue-shopping-btn">Continue Shopping</button>
+                </div>
+            </section>
+        </div>
+
+        <section class="recently-viewed-section container">
+            <h3 class="section-heading">Recently Viewed</h3>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="https://images.pexels.com/photos/10366209/pexels-photo-10366209.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            alt="White T-shirt" class="product-image">
+                        <button class="wishlist-icon" aria-label="Add to wishlist">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="lucide lucide-heart">
+                                <path
+                                    d="M19 14c1.49-1.49 2-4.05-2-8a5.5 5.5 0 0 0-7.5 3.5L12 9l-1.54-1.54A5.5 5.5 0 0 0 2 6c-4 4.51 0 10.5 2 12h11.58a2 2 0 0 0 1.42-.58L19 14z" />
+                            </svg>
+                        </button>
                     </div>
-                </a>
+                    <div class="product-details">
+                        <p class="product-name">White T-shirt</p>
+                        <p class="product-brand">Priya's Brand</p>
+                        <p class="product-price">$13.00</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="https://images.pexels.com/photos/20349880/pexels-photo-20349880/free-photo-of-man-in-white-t-shirt-and-sunglasses-standing-outdoors.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            alt="Dark Green Sweatshirt" class="product-image">
+                        <button class="wishlist-icon" aria-label="Add to wishlist">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="lucide lucide-heart">
+                                <path
+                                    d="M19 14c1.49-1.49 2-4.05-2-8a5.5 5.5 0 0 0-7.5 3.5L12 9l-1.54-1.54A5.5 5.5 0 0 0 2 6c-4 4.51 0 10.5 2 12h11.58a2 2 0 0 0 1.42-.58L19 14z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="product-details">
+                        <p class="product-name">Dark Green Sweatshirt</p>
+                        <p class="product-brand">Kobata's Brand</p>
+                        <p class="product-price">$127.00</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="https://images.pexels.com/photos/17697334/pexels-photo-17697334/free-photo-of-cute-woman-in-a-hoodie-posing.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            alt="Lavender Sweatshirt" class="product-image">
+                        <button class="wishlist-icon" aria-label="Add to wishlist">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="lucide lucide-heart">
+                                <path
+                                    d="M19 14c1.49-1.49 2-4.05-2-8a5.5 5.5 0 0 0-7.5 3.5L12 9l-1.54-1.54A5.5 5.5 0 0 0 2 6c-4 4.51 0 10.5 2 12h11.58a2 2 0 0 0 1.42-.58L19 14z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="product-details">
+                        <p class="product-name">Lavender Sweatshirt</p>
+                        <p class="product-brand">Jhanvi's Brand</p>
+                        <p class="product-price">$153.00</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="https://images.pexels.com/photos/17697334/pexels-photo-17697334/free-photo-of-cute-woman-in-a-hoodie-posing.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            alt="Urban Jacket" class="product-image">
+                        <button class="wishlist-icon" aria-label="Add to wishlist">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="lucide lucide-heart">
+                                <path
+                                    d="M19 14c1.49-1.49 2-4.05-2-8a5.5 5.5 0 0 0-7.5 3.5L12 9l-1.54-1.54A5.5 5.5 0 0 0 2 6c-4 4.51 0 10.5 2 12h11.58a2 2 0 0 0 1.42-.58L19 14z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="product-details">
+                        <p class="product-name">Urban jacket with...</p>
+                        <p class="product-brand">Sagar's Brand</p>
+                        <p class="product-price">$79.00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-section">
+                <h4>Need Help</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">Returns & Refunds</a></li>
+                    <li><a href="#">FAQ's</a></li>
+                    <li><a href="#">Career</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">euphoria Blog</a></li>
+                    <li><a href="#">euphoriastan</a></li>
+                    <li><a href="#">Collaboration</a></li>
+                    <li><a href="#">Media</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>More Info</h4>
+                <ul>
+                    <li><a href="#">Term and Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Location</h4>
+                <p>support@euphoria.in</p>
+                <p>Eklingpura Chouraha, Ahmedabad Main Road</p>
+                <p>(NH 8- Near Mahadev Hotell Udaipur, India- 313002</p>
+                <div class="download-app">
+                    <h4>Download The App</h4>
+                    <a href="#">
+                        <img src="https://via.placeholder.com/20" alt="Google Play logo">
+                        <div>
+                            <span>android app on</span>
+                            <span>Google Play</span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <img src="https://via.placeholder.com/20" alt="App Store logo">
+                        <div>
+                            <span>Available on the</span>
+                            <span>App Store</span>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-    
-    <div class="footer-middle">
-        <div class="popular-categories">
-            <h4>Popular Categories</h4>
-            <span class="arrow"> &gt; </span>
-        </div>
-    </div>
-    
-    <div class="footer-bottom">
-        <p>Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.</p>
-    </div>
-</footer>
 
-   <script src="../bootstrap/js/bootstrap.min.js"></script>
+        <div class="footer-middle">
+            <div class="popular-categories">
+                <h4>Popular Categories</h4>
+                <span class="arrow"> &gt; </span>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
 </body>
+
 </html>
