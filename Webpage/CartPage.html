@@ -1,181 +1,188 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CartPage</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Panier - Euphoria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../StylesCss/CartPage.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <header class="header">
-        <!-- Logo -->
-        <div class="logo-section">
-            <img src="../Images/logo.png" alt="Euphoria logo" class="logo">
-        </div>
-        <nav class="nav-links">
-            <a href="#">Shop</a>
-            <a href="#">Men</a>
-            <a href="#">Women</a>
-            <a href="#">Combos</a>
-            <a href="#">Joggers</a>
-        </nav>
-        <div class="search-bar">
-            <i class="fas fa-search"></i>
-            <input type="text" placeholder="Search">
-        </div>
-        <div class="header-icons">
-            <a href="#" style="color: var(--text-gray);"><i class="far fa-heart"></i></a>
-            <a href="#" style="color: var(--text-gray);"><i class="far fa-user"></i></a>
-            <a href="#" style="color: var(--text-gray);"><i class="fas fa-shopping-cart"></i></a>
-        </div>
-    </header>
 
-    <!-- Main Content -->
-    <main>
-        <div class="container">
-            <header>
-                <p>Home > <span>Add To Cart</span></p>
-            </header>
-
-            <div class="cart-title">Add To Cart</div>
-            <p class="login-info">
-                Please fill in the fields below and click place order to complete your purchase!
-                <br>Already registered? <a href="#">Please login here</a>
-            </p>
-
-            <table class="cart-table">
-                <thead>
-                    <tr>
-                        <th>Product Details</th>
-                        <th>Price</th>
-                        <th>Quantity</th>
-                        <th>Shipping</th>
-                        <th>Subtotal</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <div class="product-details">
-                                <img src="../Images/CartPage1.jpg" alt="Blue Flower Print Crop Top">
-                                <div class="product-info">
-                                    <h4>Blue Flower Print Crop Top</h4>
-                                    <p>Color: Yellow</p>
-                                    <p>Size: M</p>
-                                </div>
-                            </div>
-                        </td>
-                        <td>$29.00</td>
-                        <td>
-                            <div class="quantity-control">
-                                <button>-</button>
-                                <span>1</span>
-                                <button>+</button>
-                            </div>
-                        </td>
-                        <td>FREE</td>
-                        <td>$29.00</td>
-                        <td class="action-cell">
-                            <button class="delete-btn">🗑️</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="product-details">
-                                <img src="../Images/CartPage2.jpg" alt="Lavender Hoodie">
-                                <div class="product-info">
-                                    <h4>Lavender Hoodie</h4>
-                                    <p>Color: Lavender</p>
-                                    <p>Size: XXL</p>
-                                </div>
-                            </div>
-                        </td>
-                        <td>$119.00</td>
-                        <td>
-                            <div class="quantity-control">
-                                <button>-</button>
-                                <span>2</span>
-                                <button>+</button>
-                            </div>
-                        </td>
-                        <td>FREE</td>
-                        <td>$119.00</td>
-                        <td class="action-cell">
-                            <button class="delete-btn">🗑️</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="product-details">
-                                <img src="../Images/CartePage3.jpg" alt="Black Sweatshirt">
-                                <div class="product-info">
-                                    <h4>Black Sweatshirt</h4>
-                                    <p>Color: Black</p>
-                                    <p>Size: XXL</p>
-                                </div>
-                            </div>
-                        </td>
-                        <td>$123.00</td>
-                        <td>
-                            <div class="quantity-control">
-                                <button>-</button>
-                                <span>2</span>
-                                <button>+</button>
-                            </div>
-                        </td>
-                        <td>$5.00</td>
-                        <td>$123.00</td>
-                        <td class="action-cell">
-                            <button class="delete-btn">🗑️</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <div class="summary-container">
-                <div class="discount-section">
-                    <h3>Discount Codes</h3>
-                    <p>Enter your coupon code if you have one</p>
-                    <div class="discount-input-group">
-                        <input type="text" placeholder="Enter your coupon code here">
-                        <button>Apply Coupon</button>
-                    </div>
-                    <button class="continue-shopping">Continue Shopping</button>
+    <nav class="navbar navbar-expand-lg bg-white sticky-top">
+        <div class="container-fluid mx-lg-5">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="https://via.placeholder.com/40" alt="Logo Euphoria" class="me-2">
+                <span class="logo-text">Euphoria</span>
+            </a>
+            <div class="d-flex align-items-center ms-auto">
+                <ul class="navbar-nav me-3 d-none d-lg-flex">
+                    <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Men</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Women</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Combos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Joggers</a></li>
+                </ul>
+                <div class="search-box me-3 d-none d-lg-flex">
+                    <i class="bi bi-search me-2"></i>
+                    <input type="text" class="form-control-plaintext" placeholder="Search">
                 </div>
-                <div class="summary-section">
-                    <table>
-                        <tr>
-                            <td>Sub Total</td>
-                            <td>$513.00</td>
-                        </tr>
-                        <tr>
-                            <td>Shipping</td>
-                            <td>$5.00</td>
-                        </tr>
-                        <tr>
-                            <td>Grand Total</td>
-                            <td>$518.00</td>
-                        </tr>
-                    </table>
-                    <button class="checkout-btn">Proceed To Checkout</button>
+                <div class="d-flex align-items-center">
+                    <a href="#" class="btn btn-icon me-2"><i class="bi bi-heart"></i></a>
+                    <a href="#" class="btn btn-icon me-2"><i class="bi bi-person"></i></a>
+                    <a href="#" class="btn btn-icon btn-cart"><i class="bi bi-cart"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container-fluid py-4 px-lg-5">
+        <nav aria-label="breadcrumb" class="mb-4">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Add to Cart</li>
+            </ol>
+        </nav>
+
+        <div class="alert alert-info d-flex align-items-center" role="alert">
+            <i class="bi bi-info-circle me-2"></i>
+            <div>
+                <p class="mb-0">
+                    <span class="fw-bold">Promote!</span> The final sale amount will be calculated based on your pin code!
+                    <span class="fw-bold">Please <a href="#" class="alert-link">login here</a></span>
+                </p>
+            </div>
+        </div>
+
+        <div class="cart-container bg-white p-4 rounded-3 shadow-sm">
+            <div class="cart-header d-none d-md-flex text-uppercase text-muted fw-bold border-bottom pb-2 mb-3">
+                <div class="col-product">Product Details</div>
+                <div class="col-price">Price</div>
+                <div class="col-quantity">Quantity</div>
+                <div class="col-shipping">Shipping</div>
+                <div class="col-subtotal">Subtotal</div>
+                <div class="col-action">Action</div>
+            </div>
+            
+            <div class="cart-item d-flex align-items-center py-3 border-bottom">
+                <div class="col-product d-flex align-items-center">
+                    <img src="https://source.unsplash.com/random/100x100?blouse,woman" class="cart-item-img me-3 rounded" alt="Blue Flower Print Crop Top">
+                    <div>
+                        <h6 class="mb-0">Blue Flower Print Crop Top</h6>
+                        <small class="text-muted">Color: Yellow</small><br>
+                        <small class="text-muted">Size: M</small>
+                    </div>
+                </div>
+                <div class="col-price">$29.00</div>
+                <div class="col-quantity">
+                    <div class="quantity-control d-flex align-items-center">
+                        <button class="btn btn-light btn-sm"><i class="bi bi-dash"></i></button>
+                        <span class="mx-2">1</span>
+                        <button class="btn btn-light btn-sm"><i class="bi bi-plus"></i></button>
+                    </div>
+                </div>
+                <div class="col-shipping">FREE</div>
+                <div class="col-subtotal">$29.00</div>
+                <div class="col-action text-end">
+                    <button class="btn btn-link p-0"><i class="bi bi-trash"></i></button>
+                </div>
+            </div>
+
+            <div class="cart-item d-flex align-items-center py-3 border-bottom">
+                <div class="col-product d-flex align-items-center">
+                    <img src="https://source.unsplash.com/random/100x100?hoodie,woman" class="cart-item-img me-3 rounded" alt="Lavender Hoodie">
+                    <div>
+                        <h6 class="mb-0">Lavender Hoodie</h6>
+                        <small class="text-muted">Color: Lavender</small><br>
+                        <small class="text-muted">Size: XXL</small>
+                    </div>
+                </div>
+                <div class="col-price">$119.00</div>
+                <div class="col-quantity">
+                    <div class="quantity-control d-flex align-items-center">
+                        <button class="btn btn-light btn-sm"><i class="bi bi-dash"></i></button>
+                        <span class="mx-2">1</span>
+                        <button class="btn btn-light btn-sm"><i class="bi bi-plus"></i></button>
+                    </div>
+                </div>
+                <div class="col-shipping">FREE</div>
+                <div class="col-subtotal">$119.00</div>
+                <div class="col-action text-end">
+                    <button class="btn btn-link p-0"><i class="bi bi-trash"></i></button>
+                </div>
+            </div>
+
+            <div class="cart-item d-flex align-items-center py-3 border-bottom">
+                <div class="col-product d-flex align-items-center">
+                    <img src="https://source.unsplash.com/random/100x100?sweatshirt,woman" class="cart-item-img me-3 rounded" alt="Black Sweatshirt">
+                    <div>
+                        <h6 class="mb-0">Black Sweatshirt</h6>
+                        <small class="text-muted">Color: Black</small><br>
+                        <small class="text-muted">Size: XXL</small>
+                    </div>
+                </div>
+                <div class="col-price">$123.00</div>
+                <div class="col-quantity">
+                    <div class="quantity-control d-flex align-items-center">
+                        <button class="btn btn-light btn-sm"><i class="bi bi-dash"></i></button>
+                        <span class="mx-2">1</span>
+                        <button class="btn btn-light btn-sm"><i class="bi bi-plus"></i></button>
+                    </div>
+                </div>
+                <div class="col-shipping">$5.00</div>
+                <div class="col-subtotal">$123.00</div>
+                <div class="col-action text-end">
+                    <button class="btn btn-link p-0"><i class="bi bi-trash"></i></button>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-lg-6">
+                    <div class="discount-section p-4 rounded-3">
+                        <h5 class="fw-bold mb-3">Discount Codes</h5>
+                        <p class="text-muted small-text">Enter your coupon code if you have one.</p>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control coupon-input" placeholder="Enter coupon code">
+                            <button class="btn apply-btn" type="button">Apply Coupon</button>
+                        </div>
+                        <button class="btn continue-btn mt-3">Continue Shopping</button>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <div class="total-section p-4 rounded-3">
+                        <table class="table table-borderless table-sm">
+                            <tbody>
+                                <tr>
+                                    <td class="text-muted">Sub Total</td>
+                                    <td class="text-end fw-bold">$513.00</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-muted">Shipping</td>
+                                    <td class="text-end fw-bold">$5.00</td>
+                                </tr>
+                                <tr>
+                                    <td><h5 class="mb-0 fw-bold">Grand Total</h5></td>
+                                    <td class="text-end"><h5 class="mb-0 fw-bold">$518.00</h5></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button class="btn btn-primary w-100 proceed-btn mt-3">Proceed To Checkout</button>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
 
-
-    <!-- Footer Section -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-grid">
-                <div class="footer-column">
-                    <h3 class="column-title">Need Help</h3>
-                    <ul class="footer-links">
+    <footer class="text-white py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 mb-4">
+                    <h5 class="mb-3">Need Help</h5>
+                    <ul class="list-unstyled">
                         <li><a href="#">Contact Us</a></li>
                         <li><a href="#">Track Order</a></li>
                         <li><a href="#">Returns & Refunds</a></li>
@@ -183,70 +190,66 @@
                         <li><a href="#">Career</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h3 class="column-title">Company</h3>
-                    <ul class="footer-links">
+                <div class="col-lg-3 mb-4">
+                    <h5 class="mb-3">Company</h5>
+                    <ul class="list-unstyled">
                         <li><a href="#">About Us</a></li>
-                        <li><a href="#">euphoria Blog</a></li>
+                        <li><a href="#">Euphoria Blog</a></li>
                         <li><a href="#">euphoriastan</a></li>
                         <li><a href="#">Collaboration</a></li>
                         <li><a href="#">Media</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h3 class="column-title">More Info</h3>
-                    <ul class="footer-links">
+                <div class="col-lg-3 mb-4">
+                    <h5 class="mb-3">More Info</h5>
+                    <ul class="list-unstyled">
                         <li><a href="#">Term and Conditions</a></li>
                         <li><a href="#">Privacy Policy</a></li>
                         <li><a href="#">Shipping Policy</a></li>
                         <li><a href="#">Sitemap</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h3 class="column-title">Location</h3>
-                    <address class="location-info">
-                        <a href="mailto:support@euphoria.in">support@euphoria.in</a>
-                        <p>Eklingpura Chouraha, Ahmedabad Main Road</p>
-                        <p>(NH 8- Near Mahadev Hotell Udaipur, India- 313002</p>
+                <div class="col-lg-3 mb-4">
+                    <h5 class="mb-3">Location</h5>
+                    <address>
+                        support@euphoria.in<br>
+                        Dilipung Chauraha, Ahmedabad Main Road<br>
+                        INHS-Near Mohaddav-Istalil Udaipur, India-313002
                     </address>
                 </div>
             </div>
+            
+            <hr class="footer-divider my-4">
 
-            <div class="footer-bottom">
-                <div class="social-media">
-                    <a href="https://facebook.com" aria-label="Facebook"><img src="../Images/facebook-logo.png"
-                            alt="Facebook"></a>
-                    <a href="https://instagram.com" aria-label="Instagram"><img src="../Images/instagram-logo"
-                            alt="Instagram"></a>
-                    <a href="https://twitter.com" aria-label="Twitter"><img src="../Images/twitter-logo.png"
-                            alt="Twitter"></a>
-                    <a href="https://linkedin.com" aria-label="LinkedIn"><img src="../Images/logo-linkedin.png"
-                            alt="LinkedIn"></a>
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <div class="social-links mb-3 mb-md-0">
+                    <a href="#" class="me-2"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="me-2"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="me-2"><i class="bi bi-linkedin"></i></a>
+                    <a href="#" class="me-2"><i class="bi bi-instagram"></i></a>
                 </div>
-                <div class="download-app">
-                    <h3 class="download-title">Download The App</h3>
-                    <div class="app-links">
-                        <a href="https://play.google.com/store" aria-label="Google Play Store"><img
-                                src="../Images/logo-play-store.png" alt="Android App on Google Play"></a>
-                        <a href="https://www.apple.com/app-store/" aria-label="Apple App Store"><img
-                                src="../Images/App-Store-Logo.png" alt="Available on the App Store"></a>
+                <div class="app-links">
+                    <h5 class="mb-2">Download The App</h5>
+                    <div class="d-flex">
+                        <a href="#" class="me-2"><img src="https://via.placeholder.com/120x40" alt="Google Play"></a>
+                        <a href="#"><img src="https://via.placeholder.com/120x40" alt="App Store"></a>
                     </div>
                 </div>
             </div>
 
-            <div class="popular-categories">
-                <h3 class="popular-title">Popular Categories</h3>
-                <span class="dropdown-icon">&#9660;</span>
+            <div class="popular-categories mt-4">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">Popular Categories</h5>
+                    <i class="bi bi-chevron-down"></i>
+                </div>
             </div>
 
-            <div class="copyright">
-                <p>Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.</p>
+            <div class="copyright text-center mt-3">
+                <p class="mb-0">Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script src="../jquery/jquery-3.6.4.min.js"></script>
-    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

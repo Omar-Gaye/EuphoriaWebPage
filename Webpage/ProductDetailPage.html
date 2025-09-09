@@ -1,257 +1,236 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProductDetailPage</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Détails du produit - Euphoria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../StylesCss/ProductDetailPage.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <header class="header">
-        <!-- Logo -->
-        <div class="logo-section">
-            <img src="../Images/logo.png" alt="Euphoria logo" class="logo">
+
+    <nav class="navbar navbar-expand-lg bg-white sticky-top">
+        <div class="container-fluid mx-lg-5">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="https://via.placeholder.com/40" alt="Logo Euphoria" class="me-2">
+                <span class="logo-text">Euphoria</span>
+            </a>
+            <div class="d-flex align-items-center ms-auto">
+                <ul class="navbar-nav me-3 d-none d-lg-flex">
+                    <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Men</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Women</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Combos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Joggers</a></li>
+                </ul>
+                <div class="search-box me-3 d-none d-lg-flex">
+                    <i class="bi bi-search me-2"></i>
+                    <input type="text" class="form-control-plaintext" placeholder="Search">
+                </div>
+                <div class="d-flex align-items-center">
+                    <a href="#" class="btn btn-icon me-2"><i class="bi bi-heart"></i></a>
+                    <a href="#" class="btn btn-icon me-2"><i class="bi bi-person"></i></a>
+                    <a href="#" class="btn btn-icon btn-cart"><i class="bi bi-cart"></i></a>
+                </div>
+            </div>
         </div>
-        <nav class="nav-links">
-            <a href="#">Shop</a>
-            <a href="#">Men</a>
-            <a href="#">Women</a>
-            <a href="#">Combos</a>
-            <a href="#">Joggers</a>
+    </nav>
+
+    <main class="container-fluid py-4 px-lg-5">
+        <nav aria-label="breadcrumb" class="mb-4">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Shop</a></li>
+                <li class="breadcrumb-item"><a href="#">Women</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Top</li>
+            </ol>
         </nav>
-        <div class="search-bar">
-            <i class="fas fa-search"></i>
-            <input type="text" placeholder="Search">
+
+        <div class="row product-detail-section mb-5">
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-2">
+                        <div class="thumbnail-images d-flex flex-column gap-3">
+                            <img src="https://source.unsplash.com/random/100x120/?hoodie,black,1" class="img-fluid rounded border p-1 mb-2" alt="Miniature 1">
+                            <img src="https://source.unsplash.com/random/100x120/?hoodie,black,2" class="img-fluid rounded border p-1 mb-2" alt="Miniature 2">
+                            <img src="https://source.unsplash.com/random/100x120/?hoodie,black,3" class="img-fluid rounded border p-1 mb-2" alt="Miniature 3">
+                        </div>
+                    </div>
+                    <div class="col-10">
+                        <img src="https://source.unsplash.com/random/500x700/?hoodie,black" class="main-product-img img-fluid rounded" alt="Image principale du produit">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="product-info p-4">
+                    <h1 class="product-title fw-bold">Knee Hoodie With Black colored Design</h1>
+                    <p class="text-muted product-category">Sweatshirt</p>
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="rating-stars me-2">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-half text-warning"></i>
+                        </div>
+                        <span class="small-text text-muted me-3">9.9</span>
+                        <span class="text-muted small-text">120 reviews</span>
+                    </div>
+
+                    <div class="product-price mb-4">
+                        <span class="fw-bold fs-4">$36.00</span>
+                    </div>
+
+                    <div class="product-options mb-4">
+                        <p class="fw-bold small-text mb-2">Select Size <span class="text-muted fw-normal">(Size Guide)</span></p>
+                        <div class="size-options d-flex gap-2 mb-3">
+                            <button class="btn btn-outline-secondary size-btn">XS</button>
+                            <button class="btn btn-outline-secondary size-btn">S</button>
+                            <button class="btn btn-outline-secondary size-btn active">M</button>
+                            <button class="btn btn-outline-secondary size-btn">L</button>
+                            <button class="btn btn-outline-secondary size-btn">XL</button>
+                        </div>
+                        <p class="fw-bold small-text mb-2">Colours Available</p>
+                        <div class="color-options d-flex gap-2">
+                            <span class="color-circle active" style="background-color: black;"></span>
+                            <span class="color-circle" style="background-color: #f0f0f0;"></span>
+                            <span class="color-circle" style="background-color: #9275B9;"></span>
+                        </div>
+                    </div>
+
+                    <div class="product-actions d-flex gap-3 mb-4">
+                        <button class="btn btn-primary add-to-cart-btn w-100"><i class="bi bi-cart me-2"></i>Add to cart</button>
+                        <button class="btn btn-primary buy-now-btn w-100">$63.00</button>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center border-bottom pb-2 mb-3">
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-truck me-2"></i>
+                            <span class="small-text fw-bold">Free delivery</span>
+                        </div>
+                        <span class="text-muted small-text">Free Shipping & Returns</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-tag me-2"></i>
+                            <span class="small-text fw-bold">Cash on delivery</span>
+                        </div>
+                        <span class="text-muted small-text">Free Shipping & Returns</span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="header-icons">
-            <a href="#" style="color: var(--text-gray);"><i class="far fa-heart"></i></a>
-            <a href="#" style="color: var(--text-gray);"><i class="far fa-user"></i></a>
-            <a href="#" style="color: var(--text-gray);"><i class="fas fa-shopping-cart"></i></a>
+
+        <div class="product-description-section mb-5">
+            <h5 class="fw-bold mb-3">Product Description</h5>
+            <ul class="nav nav-pills product-info-nav mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-description-tab" data-bs-toggle="pill" data-bs-target="#pills-description" type="button" role="tab" aria-controls="pills-description" aria-selected="true">Description</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-review-tab" data-bs-toggle="pill" data-bs-target="#pills-review" type="button" role="tab" aria-controls="pills-review" aria-selected="false">User comments & Reviews</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-description" role="tabpanel" aria-labelledby="pills-description-tab">
+                    <p class="text-muted small-text">100% Bio-washed combed cotton. This feels and looks like a brand new sweatshirt. It's pre-shrunk and double stitched for durability. Wear it and you'll love it!</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li><span class="fw-bold small-text">Fabric :</span> <span class="text-muted small-text">100% Bio-washed Cotton</span></li>
+                                <li><span class="fw-bold small-text">Pattern :</span> <span class="text-muted small-text">Printed</span></li>
+                                <li><span class="fw-bold small-text">Sleeve :</span> <span class="text-muted small-text">Full Sleeve</span></li>
+                                <li><span class="fw-bold small-text">Neck :</span> <span class="text-muted small-text">Round Neck</span></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li><span class="fw-bold small-text">Fit :</span> <span class="text-muted small-text">Regular Fit</span></li>
+                                <li><span class="fw-bold small-text">Style :</span> <span class="text-muted small-text">Casual Wear</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-review" role="tabpanel" aria-labelledby="pills-review-tab">...</div>
+            </div>
+            
+            <div class="video-container mt-4">
+                <h5 class="fw-bold mb-3">Product video</h5>
+                <div class="position-relative">
+                    <img src="https://source.unsplash.com/random/900x500/?fashion,video" class="img-fluid rounded" alt="Vidéo du produit">
+                    <div class="play-button position-absolute top-50 start-50 translate-middle">
+                        <i class="bi bi-play-circle-fill text-white fs-1"></i>
+                    </div>
+                </div>
+                <p class="text-muted small-text mt-2">Knee Hoodie with black colored design</p>
+            </div>
         </div>
-    </header>
 
-    <!-- Main Content -->
-    <main>
-        <div class="product-page-breadcrumb container">
-            <a href="#">Shop</a> / <a href="#">Women</a> / <a href="#">Top</a>
+        <div class="similar-products-section mb-5">
+            <h5 class="fw-bold mb-4">Similar Products</h5>
+            <div class="row g-3">
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="product-card text-center position-relative">
+                        <img src="https://source.unsplash.com/random/200x250/?tshirt,white" class="img-fluid rounded mb-2" alt="T-shirt blanc">
+                        <span class="badge position-absolute top-0 end-0 m-2"><i class="bi bi-heart"></i></span>
+                        <p class="product-name fw-bold mb-0">White T-shirt</p>
+                        <p class="product-price text-muted small-text mb-0">$120.00</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="product-card text-center position-relative">
+                        <img src="https://source.unsplash.com/random/200x250/?sweatshirt,green,hoodie" class="img-fluid rounded mb-2" alt="Sweat-shirt vert">
+                        <span class="badge position-absolute top-0 end-0 m-2"><i class="bi bi-heart"></i></span>
+                        <p class="product-name fw-bold mb-0">Dark Green Sweatshirt</p>
+                        <p class="product-price text-muted small-text mb-0">$127.00</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="product-card text-center position-relative">
+                        <img src="https://source.unsplash.com/random/200x250/?sweatshirt,pink,hoodie" class="img-fluid rounded mb-2" alt="Sweat-shirt rose">
+                        <span class="badge position-absolute top-0 end-0 m-2"><i class="bi bi-heart"></i></span>
+                        <p class="product-name fw-bold mb-0">Lavender Hoodie</p>
+                        <p class="product-price text-muted small-text mb-0">$134.00</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="product-card text-center position-relative">
+                        <img src="https://source.unsplash.com/random/200x250/?jacket,beige" class="img-fluid rounded mb-2" alt="Veste beige">
+                        <span class="badge position-absolute top-0 end-0 m-2"><i class="bi bi-heart"></i></span>
+                        <p class="product-name fw-bold mb-0">Urban Jacket</p>
+                        <p class="product-price text-muted small-text mb-0">$99.00</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="product-card text-center position-relative">
+                        <img src="https://source.unsplash.com/random/200x250/?tshirt,white,men" class="img-fluid rounded mb-2" alt="T-shirt blanc homme">
+                        <span class="badge position-absolute top-0 end-0 m-2"><i class="bi bi-heart"></i></span>
+                        <p class="product-name fw-bold mb-0">Plain White T-shirt</p>
+                        <p class="product-price text-muted small-text mb-0">$98.00</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="product-card text-center position-relative">
+                        <img src="https://source.unsplash.com/random/200x250/?shirt,red,plaid" class="img-fluid rounded mb-2" alt="Chemise à carreaux">
+                        <span class="badge position-absolute top-0 end-0 m-2"><i class="bi bi-heart"></i></span>
+                        <p class="product-name fw-bold mb-0">Checked flannel shirt</p>
+                        <p class="product-price text-muted small-text mb-0">$123.00</p>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <section class="product-details-section container">
-            <div class="product-images">
-                <div class="thumbnail-images">
-                    <img src="../Images/ProductsDetail1.jpg" alt="Product Thumbnail 1" class="thumbnail active">
-                    <img src="../Images/ProductsDetail2.jpg" alt="Product Thumbnail 2" class="thumbnail">
-                    <img src="../Images/ProductsDetail3.jpg" alt="Product Thumbnail 3" class="thumbnail">
-                </div>
-                <div class="main-image">
-                    <img src="../Images/ProductsList1.jpg" alt="Raven Hoodie With Black Colored Design">
-                </div>
-            </div>
-
-            <div class="product-info">
-                <h1>Raven Hoodie With Black Colored Design</h1>
-                <div class="rating-reviews">
-                    <div class="stars">
-                        &#9733;&#9733;&#9733;&#9733;&#9734; <span>3.5</span>
-                    </div>
-                    <span>120 comment</span>
-                </div>
-
-                <div class="option-group">
-                    <p>Select Size <a href="#" class="size-guide-link">Size Guide ›</a></p>
-                    <div class="size-options">
-                        <button class="size-btn">XS</button>
-                        <button class="size-btn">S</button>
-                        <button class="size-btn active">M</button>
-                        <button class="size-btn">L</button>
-                        <button class="size-btn">XL</button>
-                    </div>
-                </div>
-
-                <div class="option-group">
-                    <p>Colors Available</p>
-                    <div class="color-options">
-                        <div class="color-item black active"></div>
-                        <div class="color-item red"></div>
-                        <div class="color-item purple"></div>
-                        <div class="color-item grey"></div>
-                    </div>
-                </div>
-
-                <div class="add-to-cart-section">
-                    <button class="add-to-cart-btn">Add to cart</button>
-                    <span class="product-price">$63.00</span>
-                </div>
-
-                <div class="shipping-info">
-                    <div class="info-item">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                        </svg>
-                        <span>Secure payment</span>
-                    </div>
-                    <div class="info-item">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path
-                                d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20v2.5a2.5 2.5 0 0 1-2.5 2.5H6.5A2.5 2.5 0 0 1 4 19.5zm0-15A2.5 2.5 0 0 1 6.5 2H20v2.5a2.5 2.5 0 0 1-2.5 2.5H6.5A2.5 2.5 0 0 1 4 4.5z">
-                            </path>
-                        </svg>
-                        <span>Size & Fit</span>
-                    </div>
-                    <div class="info-item">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M3 10l6-6 6 6M9 6v14a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-14"></path>
-                        </svg>
-                        <span>Free Shipping & Returns</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="product-description-section container">
-            <div class="description-tabs">
-                <button class="tab-button active">Product Description</button>
-                <button class="tab-button">User comments</button>
-                <button class="tab-button">Question & Answer</button>
-            </div>
-            <div class="description-content">
-                <div class="text-and-video">
-                    <div class="description-text">
-                        <p>100% Bio-washed Cotton – makes the fabric extra soft & silky. Flexible ribbed crew neck.
-                            Precisely stitched with no pilling & no fading. Provides all-day comfort. Anytime, anywhere,
-                            suitable range of materials-handpicked.</p>
-                    </div>
-                    <div class="product-video-placeholder">
-                        <div class="video-overlay">100M</div>
-                        <video src="https://picsum.photos/id/1020/300/200" alt="Product Video Thumbnail">
-                            <p class="video-caption">Raven Hoodie with black colored design</p>
-                    </div>
-                </div>
-
-                <div class="fabric-details">
-                    <div class="detail-item">
-                        <h4>Fabric</h4>
-                        <p>Bio-washed Cotton</p>
-                    </div>
-                    <div class="detail-item">
-                        <h4>Pattern</h4>
-                        <p>Printed</p>
-                    </div>
-                    <div class="detail-item">
-                        <h4>Fit</h4>
-                        <p>Regular-Fit</p>
-                    </div>
-                    <div class="detail-item">
-                        <h4>Neck</h4>
-                        <p>Round Neck</p>
-                    </div>
-                    <div class="detail-item">
-                        <h4>Sleeve</h4>
-                        <p>Half-sleeves</p>
-                    </div>
-                    <div class="detail-item">
-                        <h4>Style</h4>
-                        <p>Casual Wear</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="similar-products-section container">
-            <h2 class="section-title">Similar Products</h2>
-            <div class="similar-products-grid">
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="../Images/ProductsList2.jpg" alt="White T-Shirt">
-                        <button class="favorite-btn"></button>
-                    </div>
-                    <h3 class="product-name">White T-Shirt</h3>
-                    <p class="product-brand">Priya’s Brand</p>
-                    <span class="product-price">$123.00</span>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="../Images/Men5.jpg" alt="Dark Green Sweatshirt">
-                        <button class="favorite-btn"></button>
-                    </div>
-                    <h3 class="product-name">Dark Green Sweatshirt...</h3>
-                    <p class="product-brand">Roboto’s Brand</p>
-                    <span class="product-price">$127.00</span>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="../Images/ProductsList3.jpg" alt="Lavender Sweatshirt">
-                        <button class="favorite-btn"></button>
-                    </div>
-                    <h3 class="product-name">Lavender Sweatshirt</h3>
-                    <p class="product-brand">_&_Brand</p>
-                    <span class="product-price">$153.00</span>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="../Images/ProductsDetail4.jpg" alt="Urban Jacket with white...">
-                        <button class="favorite-btn"></button>
-                    </div>
-                    <h3 class="product-name">Urban Jacket with white...</h3>
-                    <p class="product-brand">Sagar’s Brand</p>
-                    <span class="product-price">$79.00</span>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="../Images/ProductsDetail5.jpg" alt="Plain White T-Shirt">
-                        <button class="favorite-btn"></button>
-                    </div>
-                    <h3 class="product-name">Plain White T-Shirt</h3>
-                    <p class="product-brand">_&_Brand</p>
-                    <span class="product-price">$123.00</span>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="../Images/Men1.jpg" alt="Checks Shirt with white...">
-                        <button class="favorite-btn"></button>
-                    </div>
-                    <h3 class="product-name">Checks Shirt with white...</h3>
-                    <p class="product-brand">_&_Brand</p>
-                    <span class="product-price">$123.00</span>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="../Images/ProductsDetail6.jpg" alt="One piece black top &...">
-                        <button class="favorite-btn"></button>
-                    </div>
-                    <h3 class="product-name">One piece black top &...</h3>
-                    <p class="product-brand">_&_Brand</p>
-                    <span class="product-price">$123.00</span>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="../Images/BigSavingZone4.jpg" alt="Denim Blue Shirt">
-                        <button class="favorite-btn"></button>
-                    </div>
-                    <h3 class="product-name">Denim Blue Shirt</h3>
-                    <p class="product-brand">_&_Brand</p>
-                    <span class="product-price">$123.00</span>
-                </div>
-            </div>
-        </section>
     </main>
 
-
-    <!-- Footer Section -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-grid">
-                <div class="footer-column">
-                    <h3 class="column-title">Need Help</h3>
-                    <ul class="footer-links">
+    <footer class="text-white py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 mb-4">
+                    <h5 class="mb-3">Need Help</h5>
+                    <ul class="list-unstyled">
                         <li><a href="#">Contact Us</a></li>
                         <li><a href="#">Track Order</a></li>
                         <li><a href="#">Returns & Refunds</a></li>
@@ -259,69 +238,66 @@
                         <li><a href="#">Career</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h3 class="column-title">Company</h3>
-                    <ul class="footer-links">
+                <div class="col-lg-3 mb-4">
+                    <h5 class="mb-3">Company</h5>
+                    <ul class="list-unstyled">
                         <li><a href="#">About Us</a></li>
-                        <li><a href="#">euphoria Blog</a></li>
+                        <li><a href="#">Euphoria Blog</a></li>
                         <li><a href="#">euphoriastan</a></li>
                         <li><a href="#">Collaboration</a></li>
                         <li><a href="#">Media</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h3 class="column-title">More Info</h3>
-                    <ul class="footer-links">
+                <div class="col-lg-3 mb-4">
+                    <h5 class="mb-3">More Info</h5>
+                    <ul class="list-unstyled">
                         <li><a href="#">Term and Conditions</a></li>
                         <li><a href="#">Privacy Policy</a></li>
                         <li><a href="#">Shipping Policy</a></li>
                         <li><a href="#">Sitemap</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h3 class="column-title">Location</h3>
-                    <address class="location-info">
-                        <a href="mailto:support@euphoria.in">support@euphoria.in</a>
-                        <p>Eklingpura Chouraha, Ahmedabad Main Road</p>
-                        <p>(NH 8- Near Mahadev Hotell Udaipur, India- 313002</p>
+                <div class="col-lg-3 mb-4">
+                    <h5 class="mb-3">Location</h5>
+                    <address>
+                        support@euphoria.in<br>
+                        Dilipung Chauraha, Ahmedabad Main Road<br>
+                        INHS-Near Mohaddav-Istalil Udaipur, India-313002
                     </address>
                 </div>
             </div>
+            
+            <hr class="footer-divider my-4">
 
-            <div class="footer-bottom">
-                <div class="social-media">
-                    <a href="https://facebook.com" aria-label="Facebook"><img src="../Images/facebook-logo.png"
-                            alt="Facebook"></a>
-                    <a href="https://instagram.com" aria-label="Instagram"><img src="../Images/instagram-logo"
-                            alt="Instagram"></a>
-                    <a href="https://twitter.com" aria-label="Twitter"><img src="../Images/twitter-logo.png"
-                            alt="Twitter"></a>
-                    <a href="https://linkedin.com" aria-label="LinkedIn"><img src="../Images/logo-linkedin.png"
-                            alt="LinkedIn"></a>
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <div class="social-links mb-3 mb-md-0">
+                    <a href="#" class="me-2"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="me-2"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="me-2"><i class="bi bi-linkedin"></i></a>
+                    <a href="#" class="me-2"><i class="bi bi-instagram"></i></a>
                 </div>
-                <div class="download-app">
-                    <h3 class="download-title">Download The App</h3>
-                    <div class="app-links">
-                        <a href="https://play.google.com/store" aria-label="Google Play Store"><img
-                                src="../Images/logo-play-store.png" alt="Android App on Google Play"></a>
-                        <a href="https://www.apple.com/app-store/" aria-label="Apple App Store"><img
-                                src="../Images/App-Store-Logo.png" alt="Available on the App Store"></a>
+                <div class="app-links">
+                    <h5 class="mb-2">Download The App</h5>
+                    <div class="d-flex">
+                        <a href="#" class="me-2"><img src="https://via.placeholder.com/120x40" alt="Google Play"></a>
+                        <a href="#"><img src="https://via.placeholder.com/120x40" alt="App Store"></a>
                     </div>
                 </div>
             </div>
 
-            <div class="popular-categories">
-                <h3 class="popular-title">Popular Categories</h3>
-                <span class="dropdown-icon">&#9660;</span>
+            <div class="popular-categories mt-4">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">Popular Categories</h5>
+                    <i class="bi bi-chevron-down"></i>
+                </div>
             </div>
 
-            <div class="copyright">
-                <p>Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.</p>
+            <div class="copyright text-center mt-3">
+                <p class="mb-0">Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

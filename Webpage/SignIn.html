@@ -1,132 +1,88 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Euphoria - Sign In</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../StylesCss/SignIn.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <!-- En-tête -->
-    <header class="entete">
-        <div class="contenu-entete">
-            <!-- Logo -->
-            <div class="section-logo">
-                <img src="../Images/logo.png" alt="Logo Euphoria" class="logo">
-            </div>
 
-            <!-- Barre de recherche -->
-            <div class="conteneur-recherche">
-                <div class="boite-recherche">
-                    <svg class="icone-recherche" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2">
-                        <circle cx="11" cy="11" r="8"></circle>
-                        <path d="m21 21-4.35-4.35"></path>
-                    </svg>
-                    <input type="text" placeholder="Rechercher" class="champ-recherche">
-                </div>
-            </div>
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid py-2">
+        <a class="navbar-brand ms-4" href="#">
+            <img src="https://via.placeholder.com/150x50" alt="Euphoria Logo" class="logo"> <span class="logo-text">Euphoria</span>
+        </a>
+        <div class="d-flex me-4">
+            <span class="nav-item dropdown d-flex align-items-center me-3">
+                <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    English (united states)
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                    <li><a class="dropdown-item" href="#">French (France)</a></li>
+                    <li><a class="dropdown-item" href="#">Spanish (Spain)</a></li>
+                </ul>
+            </span>
+            <button class="btn btn-login me-2">Login</button>
+            <button class="btn btn-signup">Sign Up</button>
+        </div>
+    </div>
+</nav>
 
-            <!-- Section droite de l'en-tête -->
-            <div class="entete-droite">
-                <!-- Sélecteur de langue -->
-                <div class="selecteur-langue">
-                    <span>Français (France)</span>
-                    <svg class="chevron-bas" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2">
-                        <polyline points="6,9 12,15 18,9"></polyline>
-                    </svg>
-                </div>
-
-                <!-- Bouton Connexion -->
-                <a href="../Webpage/SignIn.html"><button class="btn btn-primaire">Login</button></a>
-
-                <!-- Bouton Inscription -->
-                <a href="../Webpage/SignUp.Html"><button class="btn btn-contour">Sign Up</button></a>
+<div class="container-fluid main-content">
+    <div class="row g-0 h-100">
+        <div class="col-md-6 d-none d-md-block p-0">
+            <div class="image-container">
+                <img id="random-image" src="https://source.unsplash.com/random/800x1200?fashion,party" alt="Fashion image" class="img-fluid h-100 w-100">
             </div>
         </div>
-    </header>
+        <div class="col-md-6 d-flex align-items-center justify-content-center p-5">
+            <div class="signin-card w-100">
+                <h2 class="text-center mb-4">Sign In Page</h2>
 
-    <!-- Contenu principal -->
-    <div class="conteneur-principal">
-        <!-- Côté gauche - Image -->
-        <div class="section-image">
-            <img src="../Images/SignIn.jpg" alt="Mannequins de mode" class="image-hero">
-        </div>
+                <button class="btn btn-social btn-google mb-3">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Logo_of_Google_and_its_products.png" alt="Google logo" class="me-2">
+                    Continue With Google
+                </button>
+                <button class="btn btn-social btn-twitter mb-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/fr/c/c8/Logo_Twitter_Blue.png" alt="Twitter logo" class="me-2">
+                    Continue With Twitter
+                </button>
 
-        <!-- Côté droit - Formulaire de connexion -->
-        <div class="section-formulaire">
-            <div class="conteneur-formulaire">
-                <h2 class="titre-formulaire">SignIn Page</h2>
-
-                <!-- Boutons de connexion sociale -->
-                <div class="boutons-sociaux">
-                    <button class="btn-social" id="boutonGoogle">
-                        <span class="icone-google">G</span>
-                        <span>Continue with Google</span>
-                    </button>
-
-                    <button class="btn-social" id="boutonTwitter">
-                        <span class="icone-twitter">🐦</span>
-                        <span>Continue with Twitter</span>
-                    </button>
+                <div class="divider d-flex align-items-center my-4">
+                    <span class="text-center mx-3 text-muted">OR</span>
                 </div>
 
-                <!-- Séparateur -->
-                <div class="separateur">
-                    <hr class="ligne-separateur">
-                    <span class="texte-separateur">OU</span>
-                    <hr class="ligne-separateur">
-                </div>
-
-                <!-- Formulaire de connexion -->
-                <form class="formulaire-connexion" id="formulaireConnexion">
-                    <div class="groupe-formulaire">
-                        <label for="email" class="label-formulaire">User name or email address </label>
-                        <input type="email" id="email" name="email" class="champ-formulaire"
-                            placeholder="Entrez votre e-mail" required>
+                <form>
+                    <div class="mb-3">
+                        <label for="username" class="form-label">User name or email address</label>
+                        <input type="text" class="form-control" id="username" placeholder="">
                     </div>
-
-                    <div class="groupe-formulaire">
-                        <label for="motDePasse" class="label-formulaire">Password</label>
-                        <div class="conteneur-mot-de-passe">
-                            <input type="password" id="motDePasse" name="motDePasse" class="champ-formulaire"
-                                placeholder="Entrez votre mot de passe" required>
-                            <button type="button" class="bascule-mot-de-passe" id="basculeMotDePasse">
-                                <svg class="icone-oeil" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2">
-                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                                    <circle cx="12" cy="12" r="3"></circle>
-                                </svg>
-                            </button>
-                        </div>
-
-                        <div class="mot-de-passe-oublie">
-                            <button type="button" class="lien-oublie">Forget your password</button>
-                        </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label d-flex justify-content-between align-items-center">
+                            <span>Password</span>
+                            <span class="text-muted hide-link">Hide</span>
+                        </label>
+                        <input type="password" class="form-control" id="password" placeholder="">
                     </div>
-
-                    <a href="../Webpage/SignIn.html">
-                        <button type="submit" class="btn btn-primaire btn-pleine-largeur" id="boutonConnexion">
-                            <span class="texte-btn">Sign In</span>
-                            <span class="indicateur-chargement" style="display: none;">Connexion...</span>
-                        </button>
-                    </a>
+                    <div class="d-flex justify-content-end mb-4">
+                        <a href="#" class="forgot-password-link">Forget your password</a>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary btn-signin">Sign In</button>
+                    </div>
                 </form>
 
-                <!-- Lien d'inscription -->
-                <div class="lien-inscription">
-                    <span>Don't have an account? </span>
-                    <a href="../Webpage/SignUp.Html">
-                        <button type="button" class="lien-btn" id="lienInscription">Sign Up</button>
-                    </a>
-                </div>
+                <p class="text-center mt-3 dont-have-account">Don't have an account? <a href="#">Sign up</a></p>
             </div>
         </div>
     </div>
+</div>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

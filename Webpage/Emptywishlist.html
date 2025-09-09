@@ -1,184 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emptywishlist</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Liste de souhaits vide - Euphoria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../StylesCss/Emptywishlist.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <header class="header">
-        <!-- Logo -->
-        <div class="logo-section">
-            <img src="../Images/logo.png" alt="Euphoria logo" class="logo">
+
+    <nav class="navbar navbar-expand-lg bg-white sticky-top">
+        <div class="container-fluid mx-lg-5">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="https://via.placeholder.com/40" alt="Logo Euphoria" class="me-2">
+                <span class="logo-text">Euphoria</span>
+            </a>
+            <div class="d-flex align-items-center ms-auto">
+                <ul class="navbar-nav me-3 d-none d-lg-flex">
+                    <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Men</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Women</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Combos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Joggers</a></li>
+                </ul>
+                <div class="search-box me-3 d-none d-lg-flex">
+                    <i class="bi bi-search me-2"></i>
+                    <input type="text" class="form-control-plaintext" placeholder="Search">
+                </div>
+                <div class="d-flex align-items-center">
+                    <a href="#" class="btn btn-icon me-2"><i class="bi bi-heart"></i></a>
+                    <a href="#" class="btn btn-icon me-2"><i class="bi bi-person"></i></a>
+                    <a href="#" class="btn btn-icon btn-cart"><i class="bi bi-cart"></i></a>
+                </div>
+            </div>
         </div>
-        <nav class="nav-links">
-            <a href="#">Shop</a>
-            <a href="#">Men</a>
-            <a href="#">Women</a>
-            <a href="#">Combos</a>
-            <a href="#">Joggers</a>
+    </nav>
+
+    <main class="container-fluid py-4 px-lg-5">
+        <nav aria-label="breadcrumb" class="mb-4">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">My Account</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Wishlist</li>
+            </ol>
         </nav>
-        <div class="search-bar">
-            <i class="fas fa-search"></i>
-            <input type="text" placeholder="Search">
-        </div>
-        <div class="header-icons">
-            <a href="#" style="color: var(--text-gray);"><i class="far fa-heart"></i></a>
-            <a href="#" style="color: var(--text-gray);"><i class="far fa-user"></i></a>
-            <a href="#" style="color: var(--text-gray);"><i class="fas fa-shopping-cart"></i></a>
-        </div>
-    </header>
 
-    <!-- Main Content -->
-    <main class="my-account-page">
-        <div class="my-account-container container">
-            <aside class="account-sidebar">
-                <div class="sidebar-header">
-                    <h3>Hello Jhanvi</h3>
-                    <p>Welcome to your Account</p>
-                </div>
-                <nav class="sidebar-nav">
-                    <ul>
-                        <li><a href="#" class="nav-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" aria-hidden="true">
-                                    <path
-                                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z">
-                                    </path>
-                                </svg>My orders</a></li>
-                        <li><a href="#" class="nav-link active"><svg width="20" height="20" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                                    <path
-                                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                                    </path>
-                                </svg>Wishlist</a></li>
-                        <li><a href="#" class="nav-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" aria-hidden="true">
-                                    <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                                    <circle cx="8.5" cy="7" r="4"></circle>
-                                    <line x1="20" y1="8" x2="20" y2="14"></line>
-                                    <line x1="23" y1="11" x2="17" y2="11"></line>
-                                </svg>My Info</a></li>
-                        <li><a href="#" class="nav-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" aria-hidden="true">
-                                    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
-                                    <polyline points="16 17 21 12 16 7"></polyline>
-                                    <line x1="21" y1="12" x2="9" y2="12"></line>
-                                </svg>Sign out</a></li>
+        <h1 class="account-title mb-4">Hello Jhanvi</h1>
+        <p class="account-subtitle text-muted">Welcome to your Account</p>
+
+        <div class="row mt-5">
+            <div class="col-lg-3">
+                <div class="account-sidebar bg-white p-4 rounded-3 shadow-sm">
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a href="#" class="sidebar-link"><i class="bi bi-box-seam me-2"></i>My orders</a></li>
+                        <li class="mb-3"><a href="#" class="sidebar-link active-link"><i class="bi bi-heart me-2"></i>Wishlist</a></li>
+                        <li class="mb-3"><a href="#" class="sidebar-link"><i class="bi bi-info-circle me-2"></i>My info</a></li>
+                        <li><a href="#" class="sidebar-link"><i class="bi bi-box-arrow-right me-2"></i>Sign out</a></li>
                     </ul>
-                </nav>
-            </aside>
-
-            <section class="my-info-content wishlist-content">
-                <h2 class="main-title">Wishlist</h2>
-                <div class="empty-wishlist-message">
-                    <div class="heart-icon-container">
-                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon">
-                            <path
-                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                            </path>
-                        </svg>
-                    </div>
-                    <h3 class="empty-title">Your wishlist is empty.</h3>
-                    <p class="empty-text">You don't have any products in the wishlist yet. You will find a lot of
-                        interesting products on our Shop page.</p>
-                    <button class="continue-shopping-btn">Continue Shopping</button>
                 </div>
-            </section>
+            </div>
+
+            <div class="col-lg-9 mt-4 mt-lg-0">
+                <div class="wishlist-content bg-white p-4 rounded-3 shadow-sm text-center">
+                    <div class="empty-wishlist-illustration mb-4">
+                        <i class="bi bi-heart"></i>
+                    </div>
+                    <h5 class="fw-bold mb-3">Your wishlist is empty.</h5>
+                    <p class="text-muted mb-4">You don't have any products in the wishlist yet. You will find a lot <br> of interesting products on our "Shop" page.</p>
+                    <a href="#" class="btn btn-primary continue-shopping-btn">Continue Shopping</a>
+                </div>
+            </div>
         </div>
-
-        <section class="recently-viewed-section container">
-            <h3 class="section-heading">Recently Viewed</h3>
-            <div class="product-grid">
-                <div class="product-card">
-                    <div class="product-image-container">
-                        <img src="https://images.pexels.com/photos/10366209/pexels-photo-10366209.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                            alt="White T-shirt" class="product-image">
-                        <button class="wishlist-icon" aria-label="Add to wishlist">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
-                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="lucide lucide-heart">
-                                <path
-                                    d="M19 14c1.49-1.49 2-4.05-2-8a5.5 5.5 0 0 0-7.5 3.5L12 9l-1.54-1.54A5.5 5.5 0 0 0 2 6c-4 4.51 0 10.5 2 12h11.58a2 2 0 0 0 1.42-.58L19 14z" />
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="product-details">
-                        <p class="product-name">White T-shirt</p>
-                        <p class="product-brand">Priya's Brand</p>
-                        <p class="product-price">$13.00</p>
+        
+        <div class="recently-viewed mt-5">
+            <h5 class="fw-bold mb-4">Recently Viewed</h5>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card bg-white p-3 rounded-3 shadow-sm">
+                        <img src="https://source.unsplash.com/random/300x400/?woman,tshirt,white" class="img-fluid rounded mb-3" alt="Produit 1">
+                        <h6 class="mb-1">White T-shirt</h6>
+                        <p class="text-muted small-text mb-2">Color: White</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fw-bold">$18.00</span>
+                            <button class="btn btn-add-to-cart-small"><i class="bi bi-cart"></i></button>
+                        </div>
                     </div>
                 </div>
-                <div class="product-card">
-                    <div class="product-image-container">
-                        <img src="https://images.pexels.com/photos/20349880/pexels-photo-20349880/free-photo-of-man-in-white-t-shirt-and-sunglasses-standing-outdoors.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                            alt="Dark Green Sweatshirt" class="product-image">
-                        <button class="wishlist-icon" aria-label="Add to wishlist">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
-                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="lucide lucide-heart">
-                                <path
-                                    d="M19 14c1.49-1.49 2-4.05-2-8a5.5 5.5 0 0 0-7.5 3.5L12 9l-1.54-1.54A5.5 5.5 0 0 0 2 6c-4 4.51 0 10.5 2 12h11.58a2 2 0 0 0 1.42-.58L19 14z" />
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="product-details">
-                        <p class="product-name">Dark Green Sweatshirt</p>
-                        <p class="product-brand">Kobata's Brand</p>
-                        <p class="product-price">$127.00</p>
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card bg-white p-3 rounded-3 shadow-sm">
+                        <img src="https://source.unsplash.com/random/300x400/?man,hoodie,green" class="img-fluid rounded mb-3" alt="Produit 2">
+                        <h6 class="mb-1">Dark Green Sweatshirt...</h6>
+                        <p class="text-muted small-text mb-2">Color: Green</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fw-bold">$127.00</span>
+                            <button class="btn btn-add-to-cart-small"><i class="bi bi-cart"></i></button>
+                        </div>
                     </div>
                 </div>
-                <div class="product-card">
-                    <div class="product-image-container">
-                        <img src="https://images.pexels.com/photos/17697334/pexels-photo-17697334/free-photo-of-cute-woman-in-a-hoodie-posing.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                            alt="Lavender Sweatshirt" class="product-image">
-                        <button class="wishlist-icon" aria-label="Add to wishlist">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
-                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="lucide lucide-heart">
-                                <path
-                                    d="M19 14c1.49-1.49 2-4.05-2-8a5.5 5.5 0 0 0-7.5 3.5L12 9l-1.54-1.54A5.5 5.5 0 0 0 2 6c-4 4.51 0 10.5 2 12h11.58a2 2 0 0 0 1.42-.58L19 14z" />
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="product-details">
-                        <p class="product-name">Lavender Sweatshirt</p>
-                        <p class="product-brand">Jhanvi's Brand</p>
-                        <p class="product-price">$153.00</p>
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card bg-white p-3 rounded-3 shadow-sm">
+                        <img src="https://source.unsplash.com/random/300x400/?woman,sweatshirt,pink" class="img-fluid rounded mb-3" alt="Produit 3">
+                        <h6 class="mb-1">Lavender Hoodie...</h6>
+                        <p class="text-muted small-text mb-2">Color: Pink</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fw-bold">$188.00</span>
+                            <button class="btn btn-add-to-cart-small"><i class="bi bi-cart"></i></button>
+                        </div>
                     </div>
                 </div>
-                <div class="product-card">
-                    <div class="product-image-container">
-                        <img src="https://images.pexels.com/photos/17697334/pexels-photo-17697334/free-photo-of-cute-woman-in-a-hoodie-posing.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                            alt="Urban Jacket" class="product-image">
-                        <button class="wishlist-icon" aria-label="Add to wishlist">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
-                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="lucide lucide-heart">
-                                <path
-                                    d="M19 14c1.49-1.49 2-4.05-2-8a5.5 5.5 0 0 0-7.5 3.5L12 9l-1.54-1.54A5.5 5.5 0 0 0 2 6c-4 4.51 0 10.5 2 12h11.58a2 2 0 0 0 1.42-.58L19 14z" />
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="product-details">
-                        <p class="product-name">Urban jacket with...</p>
-                        <p class="product-brand">Sagar's Brand</p>
-                        <p class="product-price">$79.00</p>
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card bg-white p-3 rounded-3 shadow-sm">
+                        <img src="https://source.unsplash.com/random/300x400/?man,jacket,brown" class="img-fluid rounded mb-3" alt="Produit 4">
+                        <h6 class="mb-1">Urban jacket with embro...</h6>
+                        <p class="text-muted small-text mb-2">Color: Brown</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fw-bold">$79.00</span>
+                            <button class="btn btn-add-to-cart-small"><i class="bi bi-cart"></i></button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     </main>
 
-
-    <!-- Footer Section -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-grid">
-                <div class="footer-column">
-                    <h3 class="column-title">Need Help</h3>
-                    <ul class="footer-links">
+    <footer class="text-white py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 mb-4">
+                    <h5 class="mb-3">Need Help</h5>
+                    <ul class="list-unstyled">
                         <li><a href="#">Contact Us</a></li>
                         <li><a href="#">Track Order</a></li>
                         <li><a href="#">Returns & Refunds</a></li>
@@ -186,69 +140,66 @@
                         <li><a href="#">Career</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h3 class="column-title">Company</h3>
-                    <ul class="footer-links">
+                <div class="col-lg-3 mb-4">
+                    <h5 class="mb-3">Company</h5>
+                    <ul class="list-unstyled">
                         <li><a href="#">About Us</a></li>
-                        <li><a href="#">euphoria Blog</a></li>
+                        <li><a href="#">Euphoria Blog</a></li>
                         <li><a href="#">euphoriastan</a></li>
                         <li><a href="#">Collaboration</a></li>
                         <li><a href="#">Media</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h3 class="column-title">More Info</h3>
-                    <ul class="footer-links">
+                <div class="col-lg-3 mb-4">
+                    <h5 class="mb-3">More Info</h5>
+                    <ul class="list-unstyled">
                         <li><a href="#">Term and Conditions</a></li>
                         <li><a href="#">Privacy Policy</a></li>
                         <li><a href="#">Shipping Policy</a></li>
                         <li><a href="#">Sitemap</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h3 class="column-title">Location</h3>
-                    <address class="location-info">
-                        <a href="mailto:support@euphoria.in">support@euphoria.in</a>
-                        <p>Eklingpura Chouraha, Ahmedabad Main Road</p>
-                        <p>(NH 8- Near Mahadev Hotell Udaipur, India- 313002</p>
+                <div class="col-lg-3 mb-4">
+                    <h5 class="mb-3">Location</h5>
+                    <address>
+                        support@euphoria.in<br>
+                        Dilipung Chauraha, Ahmedabad Main Road<br>
+                        INHS-Near Mohaddav-Istalil Udaipur, India-313002
                     </address>
                 </div>
             </div>
+            
+            <hr class="footer-divider my-4">
 
-            <div class="footer-bottom">
-                <div class="social-media">
-                    <a href="https://facebook.com" aria-label="Facebook"><img src="../Images/facebook-logo.png"
-                            alt="Facebook"></a>
-                    <a href="https://instagram.com" aria-label="Instagram"><img src="../Images/instagram-logo"
-                            alt="Instagram"></a>
-                    <a href="https://twitter.com" aria-label="Twitter"><img src="../Images/twitter-logo.png"
-                            alt="Twitter"></a>
-                    <a href="https://linkedin.com" aria-label="LinkedIn"><img src="../Images/logo-linkedin.png"
-                            alt="LinkedIn"></a>
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <div class="social-links mb-3 mb-md-0">
+                    <a href="#" class="me-2"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="me-2"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="me-2"><i class="bi bi-linkedin"></i></a>
+                    <a href="#" class="me-2"><i class="bi bi-instagram"></i></a>
                 </div>
-                <div class="download-app">
-                    <h3 class="download-title">Download The App</h3>
-                    <div class="app-links">
-                        <a href="https://play.google.com/store" aria-label="Google Play Store"><img
-                                src="../Images/logo-play-store.png" alt="Android App on Google Play"></a>
-                        <a href="https://www.apple.com/app-store/" aria-label="Apple App Store"><img
-                                src="../Images/App-Store-Logo.png" alt="Available on the App Store"></a>
+                <div class="app-links">
+                    <h5 class="mb-2">Download The App</h5>
+                    <div class="d-flex">
+                        <a href="#" class="me-2"><img src="https://via.placeholder.com/120x40" alt="Google Play"></a>
+                        <a href="#"><img src="https://via.placeholder.com/120x40" alt="App Store"></a>
                     </div>
                 </div>
             </div>
 
-            <div class="popular-categories">
-                <h3 class="popular-title">Popular Categories</h3>
-                <span class="dropdown-icon">&#9660;</span>
+            <div class="popular-categories mt-4">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">Popular Categories</h5>
+                    <i class="bi bi-chevron-down"></i>
+                </div>
             </div>
 
-            <div class="copyright">
-                <p>Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.</p>
+            <div class="copyright text-center mt-3">
+                <p class="mb-0">Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

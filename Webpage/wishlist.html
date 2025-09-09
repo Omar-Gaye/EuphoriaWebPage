@@ -1,117 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wishlist</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Liste de souhaits - Euphoria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../StylesCss/wishlist.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-    <header class="header">
-        <!-- Logo -->
-        <div class="logo-section">
-            <img src="../Images/logo.png" alt="Euphoria logo" class="logo">
-        </div>
-        <nav class="nav-links">
-            <a href="#">Shop</a>
-            <a href="#">Men</a>
-            <a href="#">Women</a>
-            <a href="#">Combos</a>
-            <a href="#">Joggers</a>
-        </nav>
-        <div class="search-bar">
-            <i class="fas fa-search"></i>
-            <input type="text" placeholder="Search">
-        </div>
-        <div class="header-icons">
-            <a href="#" style="color: var(--text-gray);"><i class="far fa-heart"></i></a>
-            <a href="#" style="color: var(--text-gray);"><i class="far fa-user"></i></a>
-            <a href="#" style="color: var(--text-gray);"><i class="fas fa-shopping-cart"></i></a>
-        </div>
-    </header>
-
-    <div class="container">
-        <div class="breadcrumb">
-            <a href="../Webpage/HomePage.html">Home</a> > <a href="#">My Account</a> > <span>Wishlist</span>
-        </div>
-
-        <div class="main-content">
-            <aside class="sidebar">
-                <div class="welcome-message">
-                    <h3>Hello Jhanvi</h3>
-                    <p>Welcome to your Account</p>
-                </div>
-                <ul class="sidebar-menu">
-                    <li><a href="#"><i class="fas fa-box"></i> My orders</a></li>
-                    <li><a href="#" class="active"><i class="fas fa-heart"></i> Wishlist</a></li>
-                    <li><a href="../Webpage/ContactDetails.html"><i class="fas fa-user"></i> My info</a></li>
-                    <li><a href="#"><i class="fas fa-sign-out-alt"></i> Sign out</a></li>
+    <nav class="navbar navbar-expand-lg bg-white sticky-top">
+        <div class="container-fluid mx-lg-5">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="https://via.placeholder.com/40" alt="Logo Euphoria" class="me-2">
+                <span class="logo-text">Euphoria</span>
+            </a>
+            <div class="d-flex align-items-center ms-auto">
+                <ul class="navbar-nav me-3 d-none d-lg-flex">
+                    <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Men</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Women</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Combos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Joggers</a></li>
                 </ul>
-            </aside>
-
-            <main class="wishlist-content">
-                <h2>Wishlist</h2>
-                <div class="wishlist-item">
-                    <i class="fas fa-times remove-btn"></i>
-                    <img src="../Images/Wishlist1.jpg" alt="Blue Flower Print Crop Top">
-                    <div class="item-details">
-                        <h4>Blue Flower Print Crop Top</h4>
-                        <p>Color : Yellow</p>
-                        <p>Quantity : 1</p>
-                    </div>
-                    <div class="item-price">$29.00</div>
-                    <button class="add-to-cart-btn">Add to cart</button>
+                <div class="search-box me-3 d-none d-lg-flex">
+                    <i class="bi bi-search me-2"></i>
+                    <input type="text" class="form-control-plaintext" placeholder="Search">
                 </div>
-
-                <div class="wishlist-item">
-                    <i class="fas fa-times remove-btn"></i>
-                    <img src="../Images/Wishlist2.jpg" alt="Yellow Flower Print Dress">
-                    <div class="item-details">
-                        <h4>Yellow Flower Print Dress</h4>
-                        <p>Color : Yellow</p>
-                        <p>Quantity : 1</p>
-                    </div>
-                    <div class="item-price">$78.00</div>
-                    <button class="add-to-cart-btn">Add to cart</button>
+                <div class="d-flex align-items-center">
+                    <a href="#" class="btn btn-icon me-2"><i class="bi bi-heart"></i></a>
+                    <a href="#" class="btn btn-icon me-2"><i class="bi bi-person"></i></a>
+                    <a href="#" class="btn btn-icon btn-cart"><i class="bi bi-cart"></i></a>
                 </div>
-
-                <div class="wishlist-item">
-                    <i class="fas fa-times remove-btn"></i>
-                    <img src="../Images/Wishlist3.jpg" alt="White Hoodie long sleeve">
-                    <div class="item-details">
-                        <h4>White Hoodie long sleeve</h4>
-                        <p>Color : White</p>
-                        <p>Quantity : 1</p>
-                    </div>
-                    <div class="item-price">$134.00</div>
-                    <button class="add-to-cart-btn">Add to cart</button>
-                </div>
-
-                <div class="wishlist-item">
-                    <i class="fas fa-times remove-btn"></i>
-                    <img src="../Images/Wishlist4.jpg" alt="Brown men's long sleeve T-shirt">
-                    <div class="item-details">
-                        <h4>Brown men's long sleeve T-shirt</h4>
-                        <p>Color : Brown</p>
-                        <p>Quantity : 1</p>
-                    </div>
-                    <div class="item-price">$93.00</div>
-                    <button class="add-to-cart-btn">Add to cart</button>
-                </div>
-            </main>
+            </div>
         </div>
-    </div>
-    <!-- footer section  -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-grid">
-                <div class="footer-column">
-                    <h3 class="column-title">Need Help</h3>
-                    <ul class="footer-links">
+    </nav>
+
+    <main class="container-fluid py-4 px-lg-5">
+        <nav aria-label="breadcrumb" class="mb-4">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">My Account</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Wishlist</li>
+            </ol>
+        </nav>
+
+        <h1 class="account-title mb-4">Hello Jhanvi</h1>
+        <p class="account-subtitle text-muted">Welcome to your Account</p>
+
+        <div class="row mt-5">
+            <div class="col-lg-3">
+                <div class="account-sidebar bg-white p-4 rounded-3 shadow-sm">
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a href="#" class="sidebar-link"><i class="bi bi-box-seam me-2"></i>My orders</a></li>
+                        <li class="mb-3"><a href="#" class="sidebar-link active-link"><i class="bi bi-heart me-2"></i>Wishlist</a></li>
+                        <li class="mb-3"><a href="#" class="sidebar-link"><i class="bi bi-info-circle me-2"></i>My info</a></li>
+                        <li><a href="#" class="sidebar-link"><i class="bi bi-box-arrow-right me-2"></i>Sign out</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-9 mt-4 mt-lg-0">
+                <div class="wishlist-content bg-white p-4 rounded-3 shadow-sm">
+                    <h5 class="fw-bold mb-4">Wishlist</h5>
+                    <div class="wishlist-items-list">
+                        <div class="wishlist-item d-flex align-items-center mb-4 pb-3 border-bottom">
+                            <button class="btn btn-remove me-3"><i class="bi bi-x"></i></button>
+                            <img src="https://source.unsplash.com/random/100x120?fashion,tshirt" class="me-3 rounded" alt="Blue Flower Print Crop Top">
+                            <div class="item-details flex-grow-1">
+                                <h6 class="mb-1">Blue Flower Print Crop Top</h6>
+                                <p class="text-muted small-text mb-0">Color: Yellow</p>
+                                <p class="text-muted small-text mb-0">Quantity: 1</p>
+                            </div>
+                            <span class="item-price fw-bold me-4">$29.00</span>
+                            <button class="btn btn-add-to-cart">Add to cart</button>
+                        </div>
+                        <div class="wishlist-item d-flex align-items-center mb-4 pb-3 border-bottom">
+                            <button class="btn btn-remove me-3"><i class="bi bi-x"></i></button>
+                            <img src="https://source.unsplash.com/random/100x120?dress,yellow" class="me-3 rounded" alt="Yellow Flower Print Dress">
+                            <div class="item-details flex-grow-1">
+                                <h6 class="mb-1">Yellow Flower Print Dress</h6>
+                                <p class="text-muted small-text mb-0">Color: Yellow</p>
+                                <p class="text-muted small-text mb-0">Quantity: 1</p>
+                            </div>
+                            <span class="item-price fw-bold me-4">$78.00</span>
+                            <button class="btn btn-add-to-cart">Add to cart</button>
+                        </div>
+                        <div class="wishlist-item d-flex align-items-center mb-4 pb-3 border-bottom">
+                            <button class="btn btn-remove me-3"><i class="bi bi-x"></i></button>
+                            <img src="https://source.unsplash.com/random/100x120?hoodie,white" class="me-3 rounded" alt="White Hoodie long sleeve">
+                            <div class="item-details flex-grow-1">
+                                <h6 class="mb-1">White Hoodie long sleeve</h6>
+                                <p class="text-muted small-text mb-0">Color: White</p>
+                                <p class="text-muted small-text mb-0">Quantity: 1</p>
+                            </div>
+                            <span class="item-price fw-bold me-4">$134.00</span>
+                            <button class="btn btn-add-to-cart">Add to cart</button>
+                        </div>
+                        <div class="wishlist-item d-flex align-items-center mb-4 pb-3 border-bottom">
+                            <button class="btn btn-remove me-3"><i class="bi bi-x"></i></button>
+                            <img src="https://source.unsplash.com/random/100x120?mens,shirt" class="me-3 rounded" alt="Brown men's long sleeve T-shirt">
+                            <div class="item-details flex-grow-1">
+                                <h6 class="mb-1">Brown men's long sleeve T-shirt</h6>
+                                <p class="text-muted small-text mb-0">Color: Brown</p>
+                                <p class="text-muted small-text mb-0">Quantity: 1</p>
+                            </div>
+                            <span class="item-price fw-bold me-4">$93.00</span>
+                            <button class="btn btn-add-to-cart">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-white py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 mb-4">
+                    <h5 class="mb-3">Need Help</h5>
+                    <ul class="list-unstyled">
                         <li><a href="#">Contact Us</a></li>
                         <li><a href="#">Track Order</a></li>
                         <li><a href="#">Returns & Refunds</a></li>
@@ -119,67 +131,66 @@
                         <li><a href="#">Career</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h3 class="column-title">Company</h3>
-                    <ul class="footer-links">
+                <div class="col-lg-3 mb-4">
+                    <h5 class="mb-3">Company</h5>
+                    <ul class="list-unstyled">
                         <li><a href="#">About Us</a></li>
-                        <li><a href="#">euphoria Blog</a></li>
+                        <li><a href="#">Euphoria Blog</a></li>
                         <li><a href="#">euphoriastan</a></li>
                         <li><a href="#">Collaboration</a></li>
                         <li><a href="#">Media</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h3 class="column-title">More Info</h3>
-                    <ul class="footer-links">
+                <div class="col-lg-3 mb-4">
+                    <h5 class="mb-3">More Info</h5>
+                    <ul class="list-unstyled">
                         <li><a href="#">Term and Conditions</a></li>
                         <li><a href="#">Privacy Policy</a></li>
                         <li><a href="#">Shipping Policy</a></li>
                         <li><a href="#">Sitemap</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h3 class="column-title">Location</h3>
-                    <address class="location-info">
-                        <a href="mailto:support@euphoria.in">support@euphoria.in</a>
-                        <p>Eklingpura Chouraha, Ahmedabad Main Road</p>
-                        <p>(NH 8- Near Mahadev Hotell Udaipur, India- 313002</p>
+                <div class="col-lg-3 mb-4">
+                    <h5 class="mb-3">Location</h5>
+                    <address>
+                        support@euphoria.in<br>
+                        Dilipung Chauraha, Ahmedabad Main Road<br>
+                        INHS-Near Mohaddav-Istalil Udaipur, India-313002
                     </address>
                 </div>
             </div>
+            
+            <hr class="footer-divider my-4">
 
-            <div class="footer-bottom">
-                <div class="social-media">
-                    <a href="https://facebook.com" aria-label="Facebook"><img src="../Images/facebook-logo.png"
-                            alt="Facebook"></a>
-                    <a href="https://instagram.com" aria-label="Instagram"><img src="../Images/instagram-logo"
-                            alt="Instagram"></a>
-                    <a href="https://twitter.com" aria-label="Twitter"><img src="../Images/twitter-logo.png"
-                            alt="Twitter"></a>
-                    <a href="https://linkedin.com" aria-label="LinkedIn"><img src="../Images/logo-linkedin.png"
-                            alt="LinkedIn"></a>
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <div class="social-links mb-3 mb-md-0">
+                    <a href="#" class="me-2"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="me-2"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="me-2"><i class="bi bi-linkedin"></i></a>
+                    <a href="#" class="me-2"><i class="bi bi-instagram"></i></a>
                 </div>
-                <div class="download-app">
-                    <h3 class="download-title">Download The App</h3>
-                    <div class="app-links">
-                        <a href="https://play.google.com/store" aria-label="Google Play Store"><img
-                                src="../Images/logo-play-store.png" alt="Android App on Google Play"></a>
-                        <a href="https://www.apple.com/app-store/" aria-label="Apple App Store"><img
-                                src="../Images/App-Store-Logo.png" alt="Available on the App Store"></a>
+                <div class="app-links">
+                    <h5 class="mb-2">Download The App</h5>
+                    <div class="d-flex">
+                        <a href="#" class="me-2"><img src="https://via.placeholder.com/120x40" alt="Google Play"></a>
+                        <a href="#"><img src="https://via.placeholder.com/120x40" alt="App Store"></a>
                     </div>
                 </div>
             </div>
 
-            <div class="popular-categories">
-                <h3 class="popular-title">Popular Categories</h3>
-                <span class="dropdown-icon">&#9660;</span>
+            <div class="popular-categories mt-4">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">Popular Categories</h5>
+                    <i class="bi bi-chevron-down"></i>
+                </div>
             </div>
 
-            <div class="copyright">
-                <p>Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.</p>
+            <div class="copyright text-center mt-3">
+                <p class="mb-0">Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.</p>
             </div>
         </div>
     </footer>
-</body>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
