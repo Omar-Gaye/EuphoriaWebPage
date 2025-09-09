@@ -1122,6 +1122,19 @@
      padding: 20px;
  }
 
+ .rating-reviews {
+     display: flex;
+     align-items: right;
+     margin-bottom: 25px;
+     font-size: 14px;
+     color: #ffdd40;
+     width: 131.43125915527344;
+     height: 23.19375228881836;
+     gap: 3.87px;
+     opacity: 1;
+
+ }
+
  .section-title {
      font-size: 32px;
      margin-bottom: 40px;

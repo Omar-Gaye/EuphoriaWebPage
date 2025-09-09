@@ -512,11 +512,12 @@
      border-left: 4px solid var(--primary-purple);
      padding-left: 20px;
      margin-bottom: 40px;
+
  }
 
  .similar-products-grid {
      display: grid;
-     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
      gap: 30px;
  }
 
