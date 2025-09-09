@@ -2,538 +2,580 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HomePage</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Euphoria Fashion - Summer Collection & Designer Clothing | Premium Fashion Store</title>
     <link rel="stylesheet" href="../StylesCss/HomePage.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="header">
-        <!-- Logo -->
-        <div class="logo-section">
-            <img src="../Images/logo.png" alt="Euphoria logo" class="logo">
-        </div>
-        <nav class="nav-links">
-            <a href="../Webpage/HomePage.html">Shop</a>
-            <a href="#">Men</a>
-            <a href="../Webpage/ProductsListPage.html">Women</a>
-            <a href="#">Combos</a>
-            <a href="#">Joggers</a>
-        </nav>
-        <div class="search-bar">
-            <i class="fas fa-search"></i>
-            <input type="text" placeholder="Search">
-        </div>
-        <div class="header-icons">
-            <a href="#" style="color: var(--text-gray);"><i class="far fa-heart"></i></a>
-            <a href="../Webpage/Checkout.html" style="color: var(--text-gray);"><i class="far fa-user"></i></a>
-            <a href="../Webpage/CartPage.html" style="color: var(--text-gray);"><i class="fas fa-shopping-cart"></i></a>
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo - Completely to the left -->
+                <div class="logo">
+                    <img src="../Images/logo.png" alt="logo euphoria">
+                </div>
+
+                <!-- Center content - Navigation and Search -->
+                <div class="header-center">
+                    <nav class="nav-menu">
+                        <a href="#" class="nav-link active">Shop</a>
+                        <a href="#" class="nav-link">Men</a>
+                        <a href="#" class="nav-link">Women</a>
+                        <a href="#" class="nav-link">Combos</a>
+                        <a href="#" class="nav-link">Joggers</a>
+                    </nav>
+
+                    <div class="search-container">
+                        <img src="../Images/img_search.svg" alt="Search" class="search-icon" />
+                        <input type="text" class="search-box" placeholder="Search" />
+                    </div>
+                </div>
+
+                <!-- Icons - Organized to the right with proper spacing -->
+                <div class="header-right">
+                    <button class="hamburger">☰</button>
+                    <button class="icon-button">
+                        <img src="../Images/img_component_1.svg" alt="Wishlist" width="20" height="20" />
+                    </button>
+                    <button class="icon-button">
+                        <img src="../Images/img_user.svg" alt="Account" width="20" height="20" />
+                    </button>
+                    <button class="icon-button">
+                        <img src="../Images/img_shopping_cart.svg" alt="Cart" width="20" height="20" />
+                    </button>
+                </div>
+            </div>
         </div>
     </header>
 
     <main>
         <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-content container">
-                <div class="hero-text">
-                    <h2 class="hero-title">T-shirt / Tops</h2>
-                    <h1 class="hero-main">Summer <br> Value Pack</h1>
-                    <p class="hero-description">Cool / colorful / comfy</p>
-                    <button class="btn btn-primary hero-btn" type="button">Shop Now</button>
-                </div>
+        <section class="hero-slider">
+            <div class="hero-content">
+                <div class="hero-subtitle">T-shirt / Tops</div>
+                <h1 class="hero-title">Summer Value<br>Pack</h1>
+                <div class="hero-description">cool / colorful / comfy</div>
+                <button class="btn-primary">Shop Now</button>
+            </div>
+            <div class="carousel-indicators">
+                <img src="../Images/img_carousel_indicators.svg" alt="Carousel indicators" width="126"
+                    height="10" />
             </div>
         </section>
-        <!-- Section deux image aprés le premier -->
-        <section class="promo-section">
-            <div class="container text-center">
-                <div class="row promo-row">
-                    <div class="col promo-col">
-                        <div class="promo-box box-1">
-                            <div class="promo-content">
-                                <h6>Low Price</h6>
-                                <h2>High Coziness</h2>
-                                <h3>UPTO 50% OFF</h3>
-                                <a href="#" class="explore-btn">Explore Items</a>
-                            </div>
+
+        <!-- Promotional Cards -->
+        <section class="promo-cards">
+            <div class="container">
+                <div class="flex-row gap-30">
+                    <div class="promo-card">
+                        <img src="../Images/img_unsplash_qyc13qbgam4.png" alt="High Coziness" width="604"
+                            height="354" />
+                        <div class="promo-content">
+                            <div class="promo-subtitle">Low Price</div>
+                            <div class="promo-title">High Coziness</div>
+                            <div class="promo-discount">UPTO 50% OFF</div>
+                            <a href="#" class="promo-link">Explore Items</a>
                         </div>
                     </div>
-                    <div class="col promo-col">
-                        <div class="promo-box box-2">
-                            <div class="promo-content">
-                                <h6>Beyoung Presents</h6>
-                                <h2>Breezy Summer <br>Style</h2>
-                                <h3>UPTO 50% OFF</h3>
-                                <a href="#" class="explore-btn">Explore Items</a>
-                            </div>
+
+                    <div class="promo-card">
+                        <img src="../Images/img_unsplash_qyc13qbgam4_354x604.png" alt="Breezy Summer Style"
+                            width="604" height="354" />
+                        <div class="promo-content">
+                            <div class="promo-subtitle">Beyoung Presents</div>
+                            <div class="promo-title">Breezy Summer Style</div>
+                            <div class="promo-discount">UPTO 50% OFF</div>
+                            <a href="#" class="promo-link">Explore Items</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Featured Section -->
-        <section class="featured">
+        <!-- New Arrival -->
+        <section>
             <div class="container">
                 <div class="section-header">
+                    <div class="section-line"></div>
                     <h2 class="section-title">New Arrival</h2>
                 </div>
-                <div class="featured-grid">
-                    <div class="featured-item">
-                        <img src="../Images/NewArrival1.jpg" alt="Knitted Joggers">
-                        <div class="featured-content">
-                            <h4>Knitted Joggers</h4>
+
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="../Images/img_photographer_white_background.png" alt="Knitted Joggers"
+                            class="product-image" width="262" height="262" />
+                        <div class="product-name">Knitted Joggers</div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="../Images/img_rectangle_28.png" alt="Full Sleeve" class="product-image"
+                            width="262" height="262" />
+                        <div class="product-name">Full Sleeve</div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="../Images/img_rectangle_28_262x262.png" alt="Active T-Shirts"
+                            class="product-image" width="262" height="262" />
+                        <div class="product-name">Active T-Shirts</div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="../Images/img_rectangle_28_1.png" alt="Urban Shirts" class="product-image"
+                            width="262" height="262" />
+                        <div class="product-name">Urban Shirts</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Big Saving Zone -->
+        <section>
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-line"></div>
+                    <h2 class="section-title">Big Saving Zone</h2>
+                </div>
+
+                <div class="saving-grid">
+                    <div class="saving-card">
+                        <img src="../Images/img_rectangle_74.png" alt="Hawaiian Shirts" width="400"
+                            height="392" />
+                        <div class="saving-content">
+                            <div class="promo-title">Hawaiian Shirts</div>
+                            <div class="promo-subtitle">Dress up in summer vibe</div>
+                            <div class="promo-discount">UPTO 50% OFF</div>
+                            <button class="btn-outline">SHOP NOW</button>
                         </div>
                     </div>
 
-                    <div class="featured-item">
-                        <img src="../Images/NewArrival2.jpg" alt="Full Sleeve">
-                        <div class="featured-content">
-                            <h4>Full Sleeve</h4>
+                    <div class="saving-card">
+                        <img src="../Images/img_rectangle_75.png" alt="Printed T-Shirt" width="400"
+                            height="392" />
+                        <div class="saving-content right">
+                            <button class="btn-primary"
+                                style="font-size: 12px; padding: 8px 16px; margin-bottom: 20px;">Limited Stock</button>
+                            <div class="promo-title">Printed T-Shirt</div>
+                            <div class="promo-subtitle">New Designs Every Week</div>
+                            <div class="promo-discount">UPTO 40% OFF</div>
+                            <button class="btn-outline">SHOP NOW</button>
                         </div>
                     </div>
 
-                    <div class="featured-item">
-                        <img src="../Images/NewArrival3.jpg" alt="Active T-Shirts">
-                        <div class="featured-content">
-                            <h4>Active T-Shirts</h4>
-                        </div>
-                    </div>
-
-                    <div class="featured-item">
-                        <img src="../Images/NewArrival4.jpg" alt="Urban Shirts">
-                        <div class="featured-content">
-                            <h4>Urban Shirts</h4>
+                    <div class="saving-card">
+                        <img src="../Images/img_rectangle_76.png" alt="Cargo Joggers" width="400" height="392" />
+                        <div class="saving-content dark">
+                            <div class="promo-title">Cargo Joggers</div>
+                            <div class="promo-subtitle">Move with style & comfort</div>
+                            <div class="promo-discount">UPTO 50% OFF</div>
+                            <button class="btn-outline dark">SHOP NOW</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- big saving zone section -->
+
+        <!-- Categories For Men -->
+        <section>
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-line"></div>
+                    <h2 class="section-title">Categories For Men</h2>
+                </div>
+
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="../Images/img_rectangle_20.png" alt="Shirts" class="product-image" width="270"
+                            height="392" />
+                        <div class="flex-row justify-between align-center">
+                            <div>
+                                <div class="product-name">Shirts</div>
+                                <div class="product-brand">Explore Now!</div>
+                            </div>
+                            <img src="../Images/img_arrow_1.svg" alt="Arrow" width="16" height="1" />
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="../Images/img_rectangle_21.png" alt="Printed T-Shirts" class="product-image"
+                            width="270" height="392" />
+                        <div class="flex-row justify-between align-center">
+                            <div>
+                                <div class="product-name">Printed T-Shirts</div>
+                                <div class="product-brand">Explore Now!</div>
+                            </div>
+                            <img src="../Images/img_arrow_1.svg" alt="Arrow" width="16" height="1" />
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="../Images/img_rectangle_22.png" alt="Plain T-Shirt" class="product-image"
+                            width="272" height="392" />
+                        <div class="flex-row justify-between align-center">
+                            <div>
+                                <div class="product-name">Plain T-Shirt</div>
+                                <div class="product-brand">Explore Now!</div>
+                            </div>
+                            <img src="../Images/img_arrow_1.svg" alt="Arrow" width="16" height="1" />
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="../Images/img_rectangle_22_392x272.png" alt="Polo T-Shirt"
+                            class="product-image" width="272" height="392" />
+                        <div class="flex-row justify-between align-center">
+                            <div>
+                                <div class="product-name">Polo T-Shirt</div>
+                                <div class="product-brand">Explore Now!</div>
+                            </div>
+                            <img src="../Images/img_arrow_1.svg" alt="Arrow" width="16" height="1" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories For Women -->
+        <section>
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-line"></div>
+                    <h2 class="section-title">Categories For Women</h2>
+                </div>
+
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="../Images/img_rectangle_20_1.png" alt="Hoodies & Sweetshirt"
+                            class="product-image" width="270" height="392" />
+                        <div class="flex-row justify-between align-center">
+                            <div>
+                                <div class="product-name">Hoodies & Sweetshirt</div>
+                                <div class="product-brand">Explore Now!</div>
+                            </div>
+                            <img src="../Images/img_arrow_1.svg" alt="Arrow" width="16" height="1" />
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="../Images/img_rectangle_21_1.png" alt="Coats & Parkas" class="product-image"
+                            width="270" height="392" />
+                        <div class="flex-row justify-between align-center">
+                            <div>
+                                <div class="product-name">Coats & Parkas</div>
+                                <div class="product-brand">Explore Now!</div>
+                            </div>
+                            <img src="../Images/img_arrow_1.svg" alt="Arrow" width="16" height="1" />
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="../Images/img_rectangle_22_3.png" alt="Tees & T-Shirt" class="product-image"
+                            width="272" height="392" />
+                        <div class="flex-row justify-between align-center">
+                            <div>
+                                <div class="product-name">Tees & T-Shirt</div>
+                                <div class="product-brand">Explore Now!</div>
+                            </div>
+                            <img src="../Images/img_arrow_1.svg" alt="Arrow" width="16" height="1" />
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="../Images/img_rectangle_22_4.png" alt="Boxers" class="product-image"
+                            width="272" height="392" />
+                        <div class="flex-row justify-between align-center">
+                            <div>
+                                <div class="product-name">Boxers</div>
+                                <div class="product-brand">Explore Now!</div>
+                            </div>
+                            <img src="../Images/img_arrow_1.svg" alt="Arrow" width="16" height="1" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Top Brands Deal -->
+        <section>
+            <div class="container">
+                <div class="brand-section">
+                    <h2 class="brand-title">Top Brands Deal</h2>
+                    <div class="brand-subtitle">
+                        <span>Up To </span>
+                        <span style="color: #fbd103; font-weight: 700;">60%</span>
+                        <span> off on brands</span>
+                    </div>
+
+                    <div class="brand-logos">
+                        <div class="brand-logo">
+                            <img src="../Images/img_image_7.png" alt="Nike" width="148" height="52" />
+                        </div>
+                        <div class="brand-logo">
+                            <img src="../Images/img_image_18.png" alt="H&M" width="120" height="68" />
+                        </div>
+                        <div class="brand-logo">
+                            <img src="../Images/img_image_19.png" alt="Levis" width="110" height="54" />
+                        </div>
+                        <div class="brand-logo">
+                            <img src="../Images/img_image_20.png" alt="US Polo" width="148" height="48" />
+                        </div>
+                        <div class="brand-logo">
+                            <img src="../Images/img_image_21.png" alt="Puma" width="112" height="56" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- In The Limelight -->
+        <section>
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-line"></div>
+                    <h2 class="section-title">In The Limelight</h2>
+                </div>
+
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div style="position: relative;">
+                            <img src="../Images/img_rectangle_25.png" alt="Black Sweatshirt"
+                                class="product-image" width="282" height="370" />
+                            <img src="../Images/img_frame_49.svg" alt="Wishlist" width="32" height="32"
+                                style="position: absolute; top: 26px; right: 20px;" />
+                        </div>
+                        <div class="flex-row justify-between align-center" style="margin-top: 28px;">
+                            <div>
+                                <div class="product-name">Black Sweatshirt with ....</div>
+                                <div class="product-brand">Jhanvi's Brand</div>
+                            </div>
+                            <button class="btn-primary" style="font-size: 14px; padding: 8px 16px;">$123.00</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div style="position: relative;">
+                            <img src="../Images/img_rectangle_25_370x282.png" alt="Line Pattern Black H"
+                                class="product-image" width="282" height="370" />
+                            <img src="../Images/img_frame_49.svg" alt="Wishlist" width="32" height="32"
+                                style="position: absolute; top: 26px; right: 20px;" />
+                        </div>
+                        <div class="flex-row justify-between align-center" style="margin-top: 28px;">
+                            <div>
+                                <div class="product-name">line Pattern Black H...</div>
+                                <div class="product-brand">AS's Brand</div>
+                            </div>
+                            <button class="btn-primary" style="font-size: 14px; padding: 8px 18px;">$37.00</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div style="position: relative;">
+                            <img src="../Images/img_rectangle_25_1.png" alt="Black Shorts" class="product-image"
+                                width="282" height="370" />
+                            <img src="../Images/img_frame_49.svg" alt="Wishlist" width="32" height="32"
+                                style="position: absolute; top: 26px; right: 20px;" />
+                        </div>
+                        <div class="flex-row justify-between align-center" style="margin-top: 28px;">
+                            <div>
+                                <div class="product-name">Black Shorts</div>
+                                <div class="product-brand">MM's Brand</div>
+                            </div>
+                            <button class="btn-primary" style="font-size: 14px; padding: 8px 18px;">$37.00</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div style="position: relative;">
+                            <img src="../Images/img_rectangle_25_2.png" alt="Levender Hoodie"
+                                class="product-image" width="282" height="370" />
+                            <img src="../Images/img_frame_49.svg" alt="Wishlist" width="32" height="32"
+                                style="position: absolute; top: 26px; right: 20px;" />
+                        </div>
+                        <div class="flex-row justify-between align-center" style="margin-top: 28px;">
+                            <div>
+                                <div class="product-name">Levender Hoodie with ....</div>
+                                <div class="product-brand">Nike's Brand</div>
+                            </div>
+                            <button class="btn-primary" style="font-size: 14px; padding: 8px 16px;">$119.00</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feedback -->
+        <section>
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-line"></div>
+                    <h2 class="section-title">Feedback</h2>
+                </div>
+
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="../Images/img_rectangle_729.png" alt="Floyd Miles"
+                                class="testimonial-avatar" width="56" height="56" />
+                            <div class="star-rating">
+                                <img src="../Images/img_star_purple500.svg" alt="Star" class="star" width="22"
+                                    height="22" />
+                                <img src="../Images/img_star_purple500.svg" alt="Star" class="star" width="22"
+                                    height="22" />
+                                <img src="../Images/img_star_purple500.svg" alt="Star" class="star" width="22"
+                                    height="22" />
+                                <img src="../Images/img_star_half.svg" alt="Half Star" class="star" width="22"
+                                    height="22" />
+                                <img src="../Images/img_star_outline.svg" alt="Empty Star" class="star"
+                                    width="22" height="22" />
+                            </div>
+                        </div>
+                        <div class="testimonial-name">Floyd Miles</div>
+                        <div class="testimonial-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                            amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat
+                            sunt nostrud amet.</div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="../Images/img_rectangle_729_56x56.png" alt="Ronald Richards"
+                                class="testimonial-avatar" width="56" height="56" />
+                            <div class="star-rating">
+                                <img src="../Images/img_star_purple500.svg" alt="Star" class="star" width="22"
+                                    height="22" />
+                                <img src="../Images/img_star_purple500.svg" alt="Star" class="star" width="22"
+                                    height="22" />
+                                <img src="../Images/img_star_purple500.svg" alt="Star" class="star" width="22"
+                                    height="22" />
+                                <img src="../Images/img_star_purple500.svg" alt="Star" class="star" width="22"
+                                    height="22" />
+                                <img src="../Images/img_star_outline.svg" alt="Empty Star" class="star"
+                                    width="22" height="22" />
+                            </div>
+                        </div>
+                        <div class="testimonial-name">Ronald Richards</div>
+                        <div class="testimonial-text">ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                            duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="../Images/img_rectangle_729_1.png" alt="Savannah Nguyen"
+                                class="testimonial-avatar" width="56" height="56" />
+                            <div class="star-rating">
+                                <img src="../Images/img_star_purple500.svg" alt="Star" class="star" width="22"
+                                    height="22" />
+                                <img src="../Images/img_star_purple500.svg" alt="Star" class="star" width="22"
+                                    height="22" />
+                                <img src="../Images/img_star_purple500.svg" alt="Star" class="star" width="22"
+                                    height="22" />
+                                <img src="../Images/img_star_half.svg" alt="Half Star" class="star" width="22"
+                                    height="22" />
+                                <img src="../Images/img_star_outline.svg" alt="Empty Star" class="star"
+                                    width="22" height="22" />
+                            </div>
+                        </div>
+                        <div class="testimonial-name">Savannah Nguyen</div>
+                        <div class="testimonial-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                            amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat
+                            sunt nostrud amet.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
         <div class="container">
-            <h2 class="section-title">Big Saving Zone</h2>
-
-            <div class="grid-container">
-                <div class="card card-small card-1">
-                    <div class="card-content">
-                        <h3 class="card-title">Hawaiian<br>Shirts</h3>
-                        <p class="card-description">Dress up in summer vibe</p>
-                        <p class="card-offer">UPTO 50% OFF</p>
-                        <a href="#" class="shop-now">
-                            <i class="fas fa-arrow-down"></i>
-                            <span>SHOP NOW</span>
-                        </a>
-                    </div>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Need Help</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">Returns & Refunds</a></li>
+                        <li><a href="#">FAQ's</a></li>
+                        <li><a href="#">Career</a></li>
+                    </ul>
                 </div>
 
-                <div class="card card-large card-3">
-                    <div class="card-content">
-                        <h3 class="card-title">Cargo<br>Joggers</h3>
-                        <p class="card-description">Move with style & comfort</p>
-                        <p class="card-offer">UPTO 50% OFF</p>
-                        <a href="#" class="shop-now">
-                            <i class="fas fa-arrow-down"></i>
-                            <span>SHOP NOW</span>
-                        </a>
-                    </div>
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">euphoria Blog</a></li>
+                        <li><a href="#">euphoriastan</a></li>
+                        <li><a href="#">Collaboration</a></li>
+                        <li><a href="#">Media</a></li>
+                    </ul>
                 </div>
 
-                <div class="card card-small card-2">
-                    <span class="limited-stock">Limited Stock</span>
-                    <div class="card-content">
-                        <h3 class="card-title">Printed<br>T-Shirt</h3>
-                        <p class="card-description">New Designs Every Week</p>
-                        <p class="card-offer">UPTO 40% OFF</p>
-                        <a href="#" class="shop-now">
-                            <i class="fas fa-arrow-down"></i>
-                            <span>SHOP NOW</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="card card-large card-4">
-                    <div class="card-content">
-                        <h3 class="card-title">Urban<br>Shirts</h3>
-                        <p class="card-description">Live In Comfort</p>
-                        <p class="card-offer">FLAT 60% OFF</p>
-                        <a href="#" class="shop-now">
-                            <i class="fas fa-arrow-down"></i>
-                            <span>SHOP NOW</span>
-                        </a>
-                    </div>
+                <div class="footer-section">
+                    <h3>More Info</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Term and Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
                 </div>
 
-                <div class="card card-large card-5">
-                    <div class="card-content">
-                        <h3 class="card-title">Oversized<br>T-Shirts</h3>
-                        <p class="card-description">Street Style Icon</p>
-                        <p class="card-offer">FLAT 60% OFF</p>
-                        <a href="#" class="shop-now">
-                            <i class="fas fa-arrow-down"></i>
-                            <span>SHOP NOW</span>
+                <div class="footer-section">
+                    <h3>Location</h3>
+                    <div style="margin-top: 22px;">
+                        <div style="margin-bottom: 18px; font-size: 18px; font-weight: 500;">support@euphoria.in</div>
+                        <div style="margin-bottom: 18px; font-size: 18px; font-weight: 500;">Eklingpura Chouraha,
+                            Ahmedabad Main Road</div>
+                        <div style="margin-bottom: 18px; font-size: 18px; font-weight: 500;">(NH 8- Near Mahadev Hotel)
+                            Udaipur, India- 313002</div>
+                    </div>
+
+                    <h3 style="margin-top: 90px;">Download The App</h3>
+                    <div class="app-buttons">
+                        <a href="#" class="app-button">
+                            <img src="../Images/img_group_teal_300.svg" alt="Google Play" width="28"
+                                height="32" />
+                            <div>
+                                <div style="font-size: 10px;">android app on</div>
+                                <div style="font-size: 18px;">Google Play</div>
+                            </div>
+                        </a>
+                        <a href="#" class="app-button">
+                            <img src="../Images/img_group_white_a700.svg" alt="App Store" width="20"
+                                height="30" />
+                            <div>
+                                <div style="font-size: 10px;">Available on the</div>
+                                <div style="font-size: 18px;">App Store</div>
+                            </div>
                         </a>
                     </div>
                 </div>
+            </div>
+
+            <div class="social-icons">
+                <img src="../Images/img_group_10.svg" alt="Facebook" class="social-icon" width="36"
+                    height="36" />
+                <img src="../Images/img_group_11.svg" alt="Instagram" class="social-icon" width="36"
+                    height="36" />
+                <img src="../Images/img_group_12.svg" alt="Twitter" class="social-icon" width="36" height="36" />
+                <button class="social-icon"
+                    style="background-color: #f6f6f6; color: #2a2f2f; font-weight: 700;">in</button>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 22px;">
+                <div style="font-size: 28px; font-weight: 700;">Popular Categories</div>
+                <img src="../Images/img_icon.svg" alt="Expand" width="16" height="6" />
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom">
+                Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.
             </div>
         </div>
-        <!-- fashion section -->
-        <section class="fashion-section">
-            <div class="text-side">
-                <span class="pre-title">Nouvelle Collection</span>
-                <h1>WE MADE YOUR EVERYDAY<br><span class="line2">FASHION BETTER!</span></h1>
-                <p>In our journey to improve everyday fashion, <span class="highlight">euphoria</span> presents EVERYDAY
-                    wear range - Comfortable & Affordable fashion 24/7</p>
-                <a href="#" class="cta-button">Découvrir la collection</a>
-
-                <div class="features">
-                    <div class="feature">
-                        <i class="fas fa-truck"></i>
-                        <span>Livraison gratuite</span>
-                    </div>
-                    <div class="feature">
-                        <i class="fas fa-undo"></i>
-                        <span>Retours gratuits</span>
-                    </div>
-                    <div class="feature">
-                        <i class="fas fa-shield-alt"></i>
-                        <span>Garantie qualité</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="image-side">
-                <!-- L'image est définie en arrière-plan en CSS -->
-            </div>
-        </section>
-        <!-- Categories pour hommes -->
-        <section class="categories-section">
-            <h2 class="section-title">Categories For Men</h2>
-            <div class="categories-grid">
-                <div class="category-card">
-                    <img src="../Images/Men1.jpg" alt="Shirts" class="category-image">
-                    <div class="category-content">
-                        <h3 class="category-title">Shirts</h3>
-                        <a href="#" class="explore-btn">Explorer Now!</a>
-                    </div>
-                </div>
-
-                <div class="category-card">
-                    <img src="../Images/Men2.jpg" alt="Printed T-Shirts" class="category-image">
-                    <div class="category-content">
-                        <h3 class="category-title">Printed T-Shirts</h3>
-                        <a href="#" class="explore-btn">Explorer Now!</a>
-                    </div>
-                </div>
-
-                <div class="category-card">
-                    <img src="../Images/Men3.jpg" alt="Plain T-Shirt" class="category-image">
-                    <div class="category-content">
-                        <h3 class="category-title">Plain T-Shirt</h3>
-                        <a href="#" class="explore-btn">Explorer Now!</a>
-                    </div>
-                </div>
-
-                <div class="category-card">
-                    <img src="../Images/Men4.jpg" alt="Polo T-Shirt" class="category-image">
-                    <div class="category-content">
-                        <h3 class="category-title">Polo T-Shirt</h3>
-                        <a href="#" class="explore-btn">Explorer Now!</a>
-                    </div>
-                </div>
-
-                <div class="category-card">
-                    <img src="../Images/Men5.jpg" alt="Hoodies & Sweatshirt" class="category-image">
-                    <div class="category-content">
-                        <h3 class="category-title">Hoodies & Sweatshirt</h3>
-                        <a href="#" class="explore-btn">Explorer Now!</a>
-                    </div>
-                </div>
-
-                <div class="category-card">
-                    <img src="../Images/Men6.jpg" alt="Jeans" class="category-image">
-                    <div class="category-content">
-                        <h3 class="category-title">Jeans</h3>
-                        <a href="#" class="explore-btn">Explorer Now!</a>
-                    </div>
-                </div>
-
-                <div class="category-card">
-                    <img src="../Images/Men7.jpg" alt="Activewear" class="category-image">
-                    <div class="category-content">
-                        <h3 class="category-title">Activewear</h3>
-                        <a href="#" class="explore-btn">Explorer Now!</a>
-                    </div>
-                </div>
-
-                <div class="category-card">
-                    <img src="../Images/Men8.jpg" alt="Boxers" class="category-image">
-                    <div class="category-content">
-                        <h3 class="category-title">Boxers</h3>
-                        <a href="#" class="explore-btn">Explorer Now!</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        </section>
-        <!-- Categories pour femmes -->
-        <section class="categories-section">
-            <h2 class="section-title">Categories For Women</h2>
-
-            <div class="categories-grid">
-                <!-- Shirts -->
-                <div class="category-card">
-                    <img src="../Images/Women1.png" alt="Shirts" class="category-image">
-                    <div class="category-content">
-                        <h3 class="category-title">Shirts</h3>
-                        <a href="#" class="explore-btn">Explorer Now!</a>
-                    </div>
-                </div>
-
-                <!-- Printed T-Shirts -->
-                <div class="category-card">
-                    <img src="../Images/Women2.png" alt="Printed T-Shirts" class="category-image">
-                    <div class="category-content">
-                        <h3 class="category-title">Printed T-Shirts</h3>
-                        <a href="#" class="explore-btn">Explorer Now!</a>
-                    </div>
-                </div>
-
-                <!-- Plain T-Shirt -->
-                <div class="category-card">
-                    <img src="../Images/Women3.jpg" alt="Plain T-Shirt" class="category-image">
-                    <div class="category-content">
-                        <h3 class="category-title">Plain T-Shirt</h3>
-                        <a href="#" class="explore-btn">Explorer Now!</a>
-                    </div>
-                </div>
-
-                <!-- Polo T-Shirt -->
-                <div class="category-card">
-                    <img src="../Images/Women4.png" alt="Polo T-Shirt" class="category-image">
-                    <div class="category-content">
-                        <h3 class="category-title">Polo T-Shirt</h3>
-                        <a href="#" class="explore-btn">Explorer Now!</a>
-                    </div>
-                </div>
-
-        </section>
-        <!-- Bande de publicite Section  -->
-        <section class="brands-section">
-            <div class="section-header">
-                <h2 class="section-title">Top Brands Deal</h2>
-                <p class="section-subtitle">Up To <span style="color: rgb(201, 207, 26);">60%</span> off on brands</p>
-            </div>
-
-            <div class="brands-grid">
-                <!-- Brand 1 -->
-                <div class="brand-item">
-                    <img src="../Images/Brand1.png" alt="" class="brand-logo">
-                </div>
-
-                <!-- Brand 2 -->
-                <div class="brand-item">
-                    <img src="../Images/Brand2.png" alt="" class="brand-logo">
-                </div>
-
-                <!-- Brand 3 -->
-                <div class="brand-item">
-                    <img src="../Images/Brand3.png" alt="" class="brand-logo">
-                </div>
-
-                <!-- Brand 4 -->
-                <div class="brand-item">
-                    <img src="../Images/Brand4.png" alt="" class="brand-logo">
-                </div>
-
-                <!-- Brand 5 -->
-                <div class="brand-item">
-                    <img src="../Images/Brand5.png" alt="" class="brand-logo">
-                </div>
-
-        </section>
-        <!-- In the Limelight section  -->
-        <section class="limelight-section">
-            <h2 class="section-title">In The Limelight</h2>
-
-            <div class="products-grid">
-                <!-- Product 1 -->
-                <div class="product-card">
-                    <img src="../Images/Limelight1.jpg" alt="Black Sweatshirt" class="product-image">
-                    <div class="product-content">
-                        <h3 class="product-name">Black Sweatshirt with ...</h3>
-                        <p class="product-brand">Jhonv's Brand</p>
-                        <p class="product-price">$123.00</p>
-                    </div>
-                </div>
-
-                <!-- Product 2 -->
-                <div class="product-card">
-                    <img src="../Images/Limelight2.jpg" alt="Line Pattern Black Hoodie" class="product-image">
-                    <div class="product-content">
-                        <h3 class="product-name">Line Pattern Black H..</h3>
-                        <p class="product-brand">AS's Brand</p>
-                        <p class="product-price">$37.00</p>
-                    </div>
-                </div>
-
-                <!-- Product 3 -->
-                <div class="product-card">
-                    <img src="../Images/Limelight3.jpg" alt="Black Shorts" class="product-image">
-                    <div class="product-content">
-                        <h3 class="product-name">Black Shorts</h3>
-                        <p class="product-brand">NH's Brand</p>
-                        <p class="product-price">$37.00</p>
-                    </div>
-                </div>
-
-                <!-- Product 4 -->
-                <div class="product-card">
-                    <img src="../Images/Limelight4.jpg" alt="Lavender Hoodie" class="product-image">
-                    <div class="product-content">
-                        <h3 class="product-name">Lavender Hoodie with ...</h3>
-                        <p class="product-brand">Nike's Brand</p>
-                        <p class="product-price">$110.00</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="container">
-            <!-- Feedback Section -->
-            <section class="feedback-section">
-                <h2 class="section-title">Feedback</h2>
-
-                <div class="feedback-grid">
-                    <!-- Feedback 1 -->
-                    <div class="feedback-card">
-                        <img src="../Images/feedback1.png" alt="" class="feedback-image">
-                        <div class="rating-reviews">
-                            <div class="stars">
-                                &#9733;&#9733;&#9733;&#9733;&#9734; <span></span>
-                            </div>
-                        </div>
-                        <h3 class="feedback-author">Floyd Miles</h3>
-                        <p class="feedback-text">
-                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-                            consequat duis enim velit mollit.
-                            Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est
-                            sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation
-                            veniam consequat sunt nostrud amet.
-                        </p>
-                    </div>
-
-                    <!-- Feedback 2 -->
-                    <div class="feedback-card">
-                        <img src="../Images/feedback2.png" alt="" class="feedback-image">
-                        <div class="rating-reviews">
-                            <div class="stars">
-                                &#9733;&#9733;&#9733;&#9733;&#9733; <span></span>
-                            </div>
-                        </div>
-                        <h3 class="feedback-author">Ronald Richards</h3>
-                        <p class="feedback-text">
-                            ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
-                            Exercitation veniam consequat sunt nostrud amet.
-                        </p>
-                    </div>
-
-                    <!-- Feedback 3 -->
-                    <div class="feedback-card">
-                        <img src="../Images/feedback3.png" alt="" class="feedback-image">
-                        <div class="rating-reviews">
-                            <div class="stars">
-                                &#9733;&#9733;&#9733;&#9733;&#9734; <span></span>
-                            </div>
-                        </div>
-                        <h3 class="feedback-author">Savannah Nguyen</h3>
-                        <p class="feedback-text">
-                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-                            consequat duis enim velit mollit.
-                            Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est
-                            sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation
-                            veniam consequat sunt nostrud amet.
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Footer Section -->
-            <footer>
-                <div class="footer-container">
-                    <div class="footer-grid">
-                        <div class="footer-column">
-                            <h3 class="column-title">Need Help</h3>
-                            <ul class="footer-links">
-                                <li><a href="#">Contact Us</a></li>
-                                <li><a href="#">Track Order</a></li>
-                                <li><a href="#">Returns & Refunds</a></li>
-                                <li><a href="#">FAQ's</a></li>
-                                <li><a href="#">Career</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-column">
-                            <h3 class="column-title">Company</h3>
-                            <ul class="footer-links">
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">euphoria Blog</a></li>
-                                <li><a href="#">euphoriastan</a></li>
-                                <li><a href="#">Collaboration</a></li>
-                                <li><a href="#">Media</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-column">
-                            <h3 class="column-title">More Info</h3>
-                            <ul class="footer-links">
-                                <li><a href="#">Term and Conditions</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Shipping Policy</a></li>
-                                <li><a href="#">Sitemap</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-column">
-                            <h3 class="column-title">Location</h3>
-                            <address class="location-info">
-                                <a href="mailto:support@euphoria.in">support@euphoria.in</a>
-                                <p>Eklingpura Chouraha, Ahmedabad Main Road</p>
-                                <p>(NH 8- Near Mahadev Hotell Udaipur, India- 313002</p>
-                            </address>
-                        </div>
-                    </div>
-
-                    <div class="footer-bottom">
-                        <div class="social-media">
-                            <a href="https://facebook.com" aria-label="Facebook"><img src="../Images/facebook-logo.png"
-                                    alt="Facebook"></a>
-                            <a href="https://instagram.com" aria-label="Instagram"><img src="../Images/instagram-logo"
-                                    alt="Instagram"></a>
-                            <a href="https://twitter.com" aria-label="Twitter"><img src="../Images/twitter-logo.png"
-                                    alt="Twitter"></a>
-                            <a href="https://linkedin.com" aria-label="LinkedIn"><img src="../Images/logo-linkedin.png"
-                                    alt="LinkedIn"></a>
-                        </div>
-                        <div class="download-app">
-                            <h3 class="download-title">Download The App</h3>
-                            <div class="app-links">
-                                <a href="https://play.google.com/store" aria-label="Google Play Store"><img
-                                        src="../Images/logo-play-store.png" alt="Android App on Google Play"></a>
-                                <a href="https://www.apple.com/app-store/" aria-label="Apple App Store"><img
-                                        src="../Images/App-Store-Logo.png" alt="Available on the App Store"></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="popular-categories">
-                        <h3 class="popular-title">Popular Categories</h3>
-                        <span class="dropdown-icon">&#9660;</span>
-                    </div>
-
-                    <div class="copyright">
-                        <p>Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.</p>
-                    </div>
-                </div>
-            </footer>
-
-            <script src="../bootstrap/js/bootstrap.min.js"></script>
+    </footer>
 </body>
 
 </html>

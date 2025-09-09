@@ -2,508 +2,696 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ProductsListPage</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="../StylesCss/ProductsListPage.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header class="header">
-        <!-- Logo -->
-        <div class="logo-section">
-            <img src="../Images/logo.png" alt="Euphoria logo" class="logo">
-        </div>
-        <nav class="nav-links">
-            <a href="#">Shop</a>
-            <a href="#">Men</a>
-            <a href="#">Women</a>
-            <a href="#">Combos</a>
-            <a href="#">Joggers</a>
-        </nav>
-        <div class="search-bar">
-            <i class="fas fa-search"></i>
-            <input type="text" placeholder="Search">
-        </div>
-        <div class="header-icons">
-            <a href="#" style="color: var(--text-gray);"><i class="far fa-heart"></i></a>
-            <a href="#" style="color: var(--text-gray);"><i class="far fa-user"></i></a>
-            <a href="#" style="color: var(--text-gray);"><i class="fas fa-shopping-cart"></i></a>
-        </div>
-    </header>
+    <div class="main-container">
+        <header class="header">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo-text">
+                        <img src="../Images/logo.png" alt="logo euphoria">
+                    </div>
+                </div>
 
-    <!-- Main Content -->
-    <main class="main-content container">
-        <aside class="sidebar-filter">
-            <div class="filter-section">
-                <div class="filter-header">
-                    <h3>Filter</h3>
-                    <span class="icon">›</span>
+                <nav class="nav-menu">
+                    <a href="#" class="nav-item">Shop</a>
+                    <a href="#" class="nav-item">Men</a>
+                    <a href="#" class="nav-item active">Women</a>
+                    <a href="#" class="nav-item">Combos</a>
+                    <a href="#" class="nav-item">Joggers</a>
+                </nav>
+
+                <div class="search-container">
+                    <input type="search" class="search-input" placeholder="Search" />
+                    <img src="../Images/img_search.svg" alt="search" class="search-icon" />
+                </div>
+
+                <div class="header-actions">
+                    <button class="hamburger">☰</button>
+                    <button class="action-btn">
+                        <img src="../Images/img_component_1.svg" alt="wishlist"
+                            style="width: 20px; height: 20px;" />
+                    </button>
+                    <button class="action-btn">
+                        <img src="../Images/img_user.svg" alt="user" style="width: 20px; height: 20px;" />
+                    </button>
+                    <button class="action-btn">
+                        <img src="../Images/img_shopping_cart.svg" alt="cart"
+                            style="width: 20px; height: 20px;" />
+                    </button>
                 </div>
             </div>
+        </header>
 
-            <div class="filter-section">
-                <h4>Tops</h4>
-                <ul class="filter-list">
-                    <li><a href="#">T-shirts</a></li>
-                    <li><a href="#">Printed T-shirts</a></li>
-                    <li><a href="#">Plain T-shirts</a></li>
-                    <li><a href="#">Kurtis</a></li>
-                    <li><a href="#">Boxers</a></li>
-                    <li><a href="#">Full sleeve T-shirts</a></li>
-                    <li><a href="#">Joggers</a></li>
-                    <li><a href="#">Pyjamas</a></li>
-                    <li><a href="#">Jeans</a></li>
-                </ul>
+        <div class="content-wrapper">
+            <div class="main-content">
+                <aside class="sidebar">
+                    <div class="sidebar-section">
+                        <div class="section-header">
+                            <h2 class="section-title">Filter</h2>
+                            <img src="../Images/img_filter.svg" alt="filter"
+                                style="width: 14px; height: 16px;" />
+                        </div>
+
+                        <div class="filter-categories">
+                            <div class="filter-item">
+                                <span class="filter-text">Tops</span>
+                                <img src="../Images/img_arrow_right_gray_500.svg" alt="arrow"
+                                    style="width: 5px; height: 10px;" />
+                            </div>
+                            <div class="filter-item">
+                                <span class="filter-text">Printed T-shirts</span>
+                                <img src="../Images/img_arrow_right_gray_400_01.svg" alt="arrow"
+                                    style="width: 5px; height: 10px;" />
+                            </div>
+                            <div class="filter-item">
+                                <span class="filter-text">Plain T-shirts</span>
+                                <img src="../Images/img_arrow_right_gray_400_01.svg" alt="arrow"
+                                    style="width: 5px; height: 10px;" />
+                            </div>
+                            <div class="filter-item">
+                                <span class="filter-text">Kurti</span>
+                                <img src="../Images/img_arrow_right_blue_gray_400_01.svg" alt="arrow"
+                                    style="width: 5px; height: 10px;" />
+                            </div>
+                            <div class="filter-item">
+                                <span class="filter-text">Boxers</span>
+                                <img src="../Images/img_arrow_right_gray_400_01.svg" alt="arrow"
+                                    style="width: 5px; height: 10px;" />
+                            </div>
+                            <div class="filter-item">
+                                <span class="filter-text">Full sleeve T-shirts</span>
+                                <img src="../Images/img_arrow_right_blue_gray_400_01.svg" alt="arrow"
+                                    style="width: 5px; height: 10px;" />
+                            </div>
+                            <div class="filter-item">
+                                <span class="filter-text">Joggers</span>
+                                <img src="../Images/img_arrow_right_blue_gray_400_01.svg" alt="arrow"
+                                    style="width: 5px; height: 10px;" />
+                            </div>
+                            <div class="filter-item">
+                                <span class="filter-text">Payjamas</span>
+                                <img src="../Images/img_arrow_right_blue_gray_400_01.svg" alt="arrow"
+                                    style="width: 5px; height: 10px;" />
+                            </div>
+                            <div class="filter-item">
+                                <span class="filter-text">Jeans</span>
+                                <img src="../Images/img_arrow_right_blue_gray_400_01.svg" alt="arrow"
+                                    style="width: 5px; height: 10px;" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <div class="section-header">
+                            <h2 class="section-title">Price</h2>
+                            <img src="../Images/img_icon_gray_600.svg" alt="expand"
+                                style="width: 10px; height: 5px;" />
+                        </div>
+
+                        <div class="price-range">
+                            <input type="range" style="width: 100%; background-color: #807d7e90; border-radius: 1px;" />
+                            <div class="price-inputs">
+                                <input type="text" class="price-input" value="$70" />
+                                <input type="text" class="price-input" value="$600" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <div class="section-header">
+                            <h2 class="section-title" style="color: #3c4242;">Colors</h2>
+                            <img src="../Images/img_icon_gray_800.svg" alt="expand"
+                                style="width: 10px; height: 5px;" />
+                        </div>
+
+                        <div class="color-grid">
+                            <div class="color-column">
+                                <div class="color-swatch" style="background-color: #8434e1;"></div>
+                                <span class="color-label">Purple</span>
+                                <div class="color-swatch" style="background-color: #345eff;"></div>
+                                <span class="color-label">Navy</span>
+                                <div class="color-swatch" style="background-color: #fdc761;"></div>
+                                <span class="color-label">Yellow</span>
+                            </div>
+                            <div class="color-column">
+                                <div class="color-swatch" style="background-color: #252525;"></div>
+                                <span class="color-label">Black</span>
+                                <div class="color-swatch" style="background-color: #ffffff; border: 1px solid #f4f1f1;">
+                                </div>
+                                <span class="color-label">White</span>
+                                <div class="color-swatch" style="background-color: #e4e5e8;"></div>
+                                <span class="color-label">Grey</span>
+                            </div>
+                            <div class="color-column">
+                                <div class="color-swatch" style="background-color: #f35528;"></div>
+                                <span class="color-label">Red</span>
+                                <div class="color-swatch" style="background-color: #d67e3b;"></div>
+                                <span class="color-label">Broom</span>
+                                <div class="color-swatch" style="background-color: #e08d9d;"></div>
+                                <span class="color-label">Pink</span>
+                            </div>
+                            <div class="color-column">
+                                <div class="color-swatch" style="background-color: #f16f2b;"></div>
+                                <span class="color-label">Orange</span>
+                                <div class="color-swatch" style="background-color: #48bc4e;"></div>
+                                <span class="color-label">Green</span>
+                                <div class="color-swatch" style="background-color: #3edeff;"></div>
+                                <span class="color-label">Blue</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <div class="section-header">
+                            <h2 class="section-title">Size</h2>
+                            <img src="../Images/img_icon_gray_600.svg" alt="expand"
+                                style="width: 10px; height: 5px;" />
+                        </div>
+
+                        <div class="size-grid">
+                            <div class="size-row">
+                                <button class="size-btn">XXS</button>
+                                <button class="size-btn">XL</button>
+                                <button class="size-btn">XS</button>
+                            </div>
+                            <div class="size-row">
+                                <button class="size-btn">S</button>
+                                <button class="size-btn">M</button>
+                                <button class="size-btn">L</button>
+                            </div>
+                            <div class="size-row">
+                                <button class="size-btn">XXL</button>
+                                <button class="size-btn">3XL</button>
+                                <button class="size-btn">4XL</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <div class="section-header">
+                            <h2 class="section-title">Dress Style</h2>
+                            <img src="../Images/img_icon_gray_600.svg" alt="expand"
+                                style="width: 10px; height: 5px;" />
+                        </div>
+
+                        <div class="filter-categories">
+                            <div class="filter-item">
+                                <span class="filter-text">Classic</span>
+                                <img src="../Images/img_arrow_right_gray_500.svg" alt="arrow"
+                                    style="width: 5px; height: 10px;" />
+                            </div>
+                            <div class="filter-item">
+                                <span class="filter-text">Casual</span>
+                                <img src="../Images/img_arrow_right_gray_400_01.svg" alt="arrow"
+                                    style="width: 5px; height: 10px;" />
+                            </div>
+                            <div class="filter-item">
+                                <span class="filter-text">Business</span>
+                                <img src="../Images/img_arrow_right_gray_400_01.svg" alt="arrow"
+                                    style="width: 5px; height: 10px;" />
+                            </div>
+                            <div class="filter-item">
+                                <span class="filter-text">Sport</span>
+                                <img src="../Images/img_arrow_right_gray_400_01.svg" alt="arrow"
+                                    style="width: 5px; height: 10px;" />
+                            </div>
+                            <div class="filter-item">
+                                <span class="filter-text">Elegant</span>
+                                <img src="../Images/img_arrow_right_gray_400_01.svg" alt="arrow"
+                                    style="width: 5px; height: 10px;" />
+                            </div>
+                            <div class="filter-item">
+                                <span class="filter-text">Formal (evening)</span>
+                                <img src="../Images/img_arrow_right_gray_400_01.svg" alt="arrow"
+                                    style="width: 5px; height: 10px;" />
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <main class="products-section">
+                    <div class="products-header">
+                        <h1 class="products-title">Women's Clothing</h1>
+                        <div class="sort-options">
+                            <a href="#" class="sort-link new">New</a>
+                            <a href="#" class="sort-link recommended">Recommended</a>
+                        </div>
+                    </div>
+
+                    <div class="products-grid">
+                        <article class="product-card">
+                            <div class="product-image-container">
+                                <img src="../Images/img_rectangle_25.png" alt="Black Sweatshirt with design"
+                                    class="product-image" />
+                                <button class="favorite-btn">
+                                    <img src="../Images/img_frame_49.svg" alt="add to favorites"
+                                        style="width: 32px; height: 32px;" />
+                                </button>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-details">
+                                    <h3 class="product-name">Black Sweatshirt with ....</h3>
+                                    <p class="product-brand">Jhanvi's Brand</p>
+                                </div>
+                                <button class="product-price">$123.00</button>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-image-container">
+                                <img src="../Images/img_rectangle_25_3.png" alt="White T-shirt"
+                                    class="product-image" />
+                                <button class="favorite-btn">
+                                    <img src="../Images/img_frame_49.svg" alt="add to favorites"
+                                        style="width: 32px; height: 32px;" />
+                                </button>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-details">
+                                    <h3 class="product-name">White T-shirt</h3>
+                                    <p class="product-brand">Helen's Brand</p>
+                                </div>
+                                <button class="product-price">$11.00</button>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-image-container">
+                                <img src="../Images/img_rectangle_25_2.png" alt="Levender Hoodie with design"
+                                    class="product-image" />
+                                <button class="favorite-btn">
+                                    <img src="../Images/img_frame_49.svg" alt="add to favorites"
+                                        style="width: 32px; height: 32px;" />
+                                </button>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-details">
+                                    <h3 class="product-name">Levender Hoodie with ....</h3>
+                                    <p class="product-brand">Nike's Brand</p>
+                                </div>
+                                <button class="product-price">$119.00</button>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-image-container">
+                                <img src="../Images/img_rectangle_25_4.png" alt="Leaves Pattern White shirt"
+                                    class="product-image" />
+                                <button class="favorite-btn">
+                                    <img src="../Images/img_frame_49.svg" alt="add to favorites"
+                                        style="width: 32px; height: 32px;" />
+                                </button>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-details">
+                                    <h3 class="product-name">Leaves Pattern White...</h3>
+                                    <p class="product-brand">paypal's Brand</p>
+                                </div>
+                                <button class="product-price">$77.00</button>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-image-container">
+                                <img src="../Images/img_rectangle_25_5.png" alt="White Graphic Crop Top"
+                                    class="product-image" />
+                                <button class="favorite-btn">
+                                    <img src="../Images/img_frame_49.svg" alt="add to favorites"
+                                        style="width: 32px; height: 32px;" />
+                                </button>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-details">
+                                    <h3 class="product-name">White Graphic Crop Top</h3>
+                                    <p class="product-brand">woden's Brand</p>
+                                </div>
+                                <button class="product-price">$29.00</button>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-image-container">
+                                <img src="../Images/img_rectangle_25_1.png" alt="Black Shorts"
+                                    class="product-image" />
+                                <button class="favorite-btn">
+                                    <img src="../Images/img_frame_49.svg" alt="add to favorites"
+                                        style="width: 32px; height: 32px;" />
+                                </button>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-details">
+                                    <h3 class="product-name">Black Shorts</h3>
+                                    <p class="product-brand">MM's Brand</p>
+                                </div>
+                                <button class="product-price">$37.00</button>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-image-container">
+                                <img src="../Images/img_rectangle_25_6.png" alt="Barboreal Gray Sweats"
+                                    class="product-image" />
+                                <button class="favorite-btn">
+                                    <img src="../Images/img_frame_49.svg" alt="add to favorites"
+                                        style="width: 32px; height: 32px;" />
+                                </button>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-details">
+                                    <h3 class="product-name">Barboreal Gray Sweats...</h3>
+                                    <p class="product-brand">Priya's Brand</p>
+                                </div>
+                                <button class="product-price">$77.00</button>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-image-container">
+                                <img src="../Images/img_rectangle_25_7.png" alt="Yellow Sweatshirt"
+                                    class="product-image" />
+                                <button class="favorite-btn">
+                                    <img src="../Images/img_frame_49.svg" alt="add to favorites"
+                                        style="width: 32px; height: 32px;" />
+                                </button>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-details">
+                                    <h3 class="product-name">Yellow Sweatshirt</h3>
+                                    <p class="product-brand">woden's Brand</p>
+                                </div>
+                                <button class="product-price">$29.00</button>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-image-container">
+                                <img src="../Images/img_rectangle_25_8.png" alt="Flower Pattern Black Crop Top"
+                                    class="product-image" />
+                                <button class="favorite-btn">
+                                    <img src="../Images/img_frame_49.svg" alt="add to favorites"
+                                        style="width: 32px; height: 32px;" />
+                                </button>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-details">
+                                    <h3 class="product-name">Flower Pattern Black C...</h3>
+                                    <p class="product-brand">MM's Brand</p>
+                                </div>
+                                <button class="product-price">$37.00</button>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-image-container">
+                                <img src="../Images/img_rectangle_25_9.png" alt="I Don't Graphic T-shirt"
+                                    class="product-image" />
+                                <button class="favorite-btn">
+                                    <img src="../Images/img_frame_49.svg" alt="add to favorites"
+                                        style="width: 32px; height: 32px;" />
+                                </button>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-details">
+                                    <h3 class="product-name">I Don't Graphic T-shirt</h3>
+                                    <p class="product-brand">Nisargi's Brand</p>
+                                </div>
+                                <button class="product-price">$77.00</button>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-image-container">
+                                <img src="../Images/img_rectangle_25_10.png" alt="Blue Flower Print Crop Top"
+                                    class="product-image" />
+                                <button class="favorite-btn">
+                                    <img src="../Images/img_frame_49.svg" alt="add to favorites"
+                                        style="width: 32px; height: 32px;" />
+                                </button>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-details">
+                                    <h3 class="product-name">Blue Flower Print Crop ....</h3>
+                                    <p class="product-brand">Mellon's Brand</p>
+                                </div>
+                                <button class="product-price">$29.00</button>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-image-container">
+                                <img src="../Images/img_rectangle_25_370x282.png" alt="Line Pattern Black Hoodie"
+                                    class="product-image" />
+                                <button class="favorite-btn">
+                                    <img src="../Images/img_frame_49.svg" alt="add to favorites"
+                                        style="width: 32px; height: 32px;" />
+                                </button>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-details">
+                                    <h3 class="product-name">line Pattern Black H...</h3>
+                                    <p class="product-brand">AS's Brand</p>
+                                </div>
+                                <button class="product-price">$37.00</button>
+                            </div>
+                        </article>
+                    </div>
+                </main>
             </div>
 
-            <div class="filter-section">
-                <h4>Price</h4>
-                <div class="price-range">
-                    <input type="range" min="50" max="1000" value="70">
-                    <input type="range" min="50" max="1000" value="500">
-                    <div class="price-values">
-                        <span>$70</span>
-                        <span>$500</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="filter-section">
-                <h4>Colors</h4>
-                <div class="color-options">
-                    <div class="color-item black active"></div>
-                    <div class="color-item red"></div>
-                    <div class="color-item orange"></div>
-                    <div class="color-item purple"></div>
-                    <div class="color-item black"></div>
-                    <div class="color-item red"></div>
-                    <div class="color-item orange"></div>
-                    <div class="color-item purple"></div>
-                    <div class="color-item navy"></div>
-                    <div class="color-item white"></div>
-                    <div class="color-item gray"></div>
-                    <div class="color-item green"></div>
-                    <div class="color-item yellow"></div>
-                    <div class="color-item gray"></div>
-                    <div class="color-item blue"></div>
-                </div>
-            </div>
-
-            <div class="filter-section">
-                <h4>Size</h4>
-                <div class="size-options">
-                    <button class="size-btn">XXS</button>
-                    <button class="size-btn">XL</button>
-                    <button class="size-btn">XS</button>
-                    <button class="size-btn">S</button>
-                    <button class="size-btn">M</button>
-                    <button class="size-btn">L</button>
-                    <button class="size-btn">XXL</button>
-                    <button class="size-btn">3XL</button>
-                    <button class="size-btn">4XL</button>
-                </div>
-            </div>
-
-            <div class="filter-section">
-                <h4>Dress Style</h4>
-                <ul class="filter-list">
-                    <li><a href="#">Casual</a></li>
-                    <li><a href="#">Business</a></li>
-                    <li><a href="#">Sport</a></li>
-                    <li><a href="#">Elegant</a></li>
-                    <li><a href="#">Formal (evening)</a></li>
-                </ul>
-            </div>
-        </aside>
-
-        <div class="products-container">
-            <div class="products-header">
-                <h2 class="title">Women's Clothing</h2>
-                <div class="product-sort">
-                    <a href="#" class="sort-link new active">New</a>
-                    <a href="#" class="sort-link recommended">Recommended</a>
-                </div>
-            </div>
-
-            <div class="product-grid">
-                <div class="product-card">
-                    <div class="product-image">
-                        <a href="../Webpage/ProductDetailPage.html">
-                            <img src="../Images/ProductsList1.jpg" alt="Black Sweatshirt">
-                        </a>
-                        <button class="favorite-btn" aria-label="Add to favorites">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor"
-                                stroke-width="2" aria-hidden="true">
-                                <path
-                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                                </path>
-                            </svg>
-                        </button>
-                        <div class="price-tag">$123.00</div>
-                    </div>
-                    <h3 class="product-name">Black Sweatshirt with...</h3>
-                    <p class="product-brand">Jhanvi’s Brand</p>
+            <section class="content-section">
+                <div class="section-header-with-line">
+                    <div class="purple-line"></div>
+                    <h2 class="section-main-title">Clothing for Women Online in India</h2>
                 </div>
 
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="../Images/ProductsList2.jpg" alt="White T-shirt">
-                        <button class="favorite-btn" aria-label="Add to favorites">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor"
-                                stroke-width="2" aria-hidden="true">
-                                <path
-                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                                </path>
-                            </svg>
-                        </button>
-                        <div class="price-tag">$11.00</div>
-                    </div>
-                    <h3 class="product-name">White T-shirt</h3>
-                    <p class="product-brand">Helen’s Brand</p>
-                </div>
+                <h3 class="section-subtitle">Reexplore Women's Clothing Collection Online at Euphoria</h3>
 
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="../Images/ProductsList3.jpg" alt="Lavender Hoodie">
-                        <button class="favorite-btn" aria-label="Add to favorites">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor"
-                                stroke-width="2" aria-hidden="true">
-                                <path
-                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                                </path>
-                            </svg>
-                        </button>
-                        <div class="price-tag">$119.00</div>
-                    </div>
-                    <h3 class="product-name">Lavender Hoodie with...</h3>
-                    <p class="product-brand">Nike’s Brand</p>
-                </div>
+                <p class="section-text">
+                    Women's Clothing – Are you searching for the best website to buy Clothing for Women online in India?
+                    Well, your search for the coolest and most stylish womens clothing ends here. From trendy Casual
+                    Womens Wear Online shopping to premium quality cotton women's apparel, <strong>Euphoria has closet
+                        of Women Collection covered with the latest and best designs of Women's Clothing
+                        Online.</strong>
+                </p>
 
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="../Images/ProductsList4.jpg" alt="Leaves Pattern White">
-                        <button class="favorite-btn" aria-label="Add to favorites">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor"
-                                stroke-width="2" aria-hidden="true">
-                                <path
-                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                                </path>
-                            </svg>
-                        </button>
-                        <div class="price-tag">$77.00</div>
-                    </div>
-                    <h3 class="product-name">Leaves Pattern White...</h3>
-                    <p class="product-brand">paypal’s Brand</p>
-                </div>
+                <p class="section-text">
+                    Our collection of clothes for women will make you the trendsetter with an iconic resemblance of
+                    choice in Womens Wear.
+                </p>
 
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="../Images/ProductsList5.jpg" alt="White Graphic Crop Top">
-                        <button class="favorite-btn" aria-label="Add to favorites">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor"
-                                stroke-width="2" aria-hidden="true">
-                                <path
-                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                                </path>
-                            </svg>
-                        </button>
-                        <div class="price-tag">$29.00</div>
-                    </div>
-                    <h3 class="product-name">White Graphic Crop Top</h3>
-                    <p class="product-brand">woden’s Brand</p>
-                </div>
+                <h3 class="section-subtitle">One-Stop Destination to Shop Every Clothing for Women: Euphoria</h3>
 
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="../Images/ProductsList6.jpg" alt="Black Shorts">
-                        <button class="favorite-btn" aria-label="Add to favorites">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor"
-                                stroke-width="2" aria-hidden="true">
-                                <path
-                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                                </path>
-                            </svg>
-                        </button>
-                        <div class="price-tag">$37.00</div>
-                    </div>
-                    <h3 class="product-name">Black Shorts</h3>
-                    <p class="product-brand">MM’s Brand</p>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="../Images/ProductsList7.jpg" alt="Grey Sweatshirt">
-                        <button class="favorite-btn" aria-label="Add to favorites">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor"
-                                stroke-width="2" aria-hidden="true">
-                                <path
-                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                                </path>
-                            </svg>
-                        </button>
-                        <div class="price-tag">$77.00</div>
-                    </div>
-                    <h3 class="product-name">Barbarani Grey Sweat...</h3>
-                    <p class="product-brand">Priya’s Brand</p>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="../Images/ProductsList8.jpg" alt="Yellow Sweatshirt">
-                        <button class="favorite-btn" aria-label="Add to favorites">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor"
-                                stroke-width="2" aria-hidden="true">
-                                <path
-                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                                </path>
-                            </svg>
-                        </button>
-                        <div class="price-tag">$29.00</div>
-                    </div>
-                    <h3 class="product-name">Yellow Sweatshirt</h3>
-                    <p class="product-brand">woden’s Brand</p>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="../Images/ProductsList9.jpg" alt="Flower Pattern Black T-shirt">
-                        <button class="favorite-btn" aria-label="Add to favorites">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor"
-                                stroke-width="2" aria-hidden="true">
-                                <path
-                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                                </path>
-                            </svg>
-                        </button>
-                        <div class="price-tag">$37.00</div>
-                    </div>
-                    <h3 class="product-name">Flower Pattern Black C...</h3>
-                    <p class="product-brand">MM’s Brand</p>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="../Images/ProductsList10.jpg" alt="Don't Graphic T-shirt">
-                        <button class="favorite-btn" aria-label="Add to favorites">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor"
-                                stroke-width="2" aria-hidden="true">
-                                <path
-                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                                </path>
-                            </svg>
-                        </button>
-                        <div class="price-tag">$77.00</div>
-                    </div>
-                    <h3 class="product-name">I Don't Graphic T-shirt</h3>
-                    <p class="product-brand">Nisargi’s Brand</p>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="../Images/ProductsList11.jpg" alt="Blue Flower Print Crop">
-                        <button class="favorite-btn" aria-label="Add to favorites">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor"
-                                stroke-width="2" aria-hidden="true">
-                                <path
-                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                                </path>
-                            </svg>
-                        </button>
-                        <div class="price-tag">$29.00</div>
-                    </div>
-                    <h3 class="product-name">Blue Flower Print Crop</h3>
-                    <p class="product-brand">Mellon’s Brand</p>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="../Images/ProductsList12.jpg" alt="Line Pattern Black H">
-                        <button class="favorite-btn" aria-label="Add to favorites">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor"
-                                stroke-width="2" aria-hidden="true">
-                                <path
-                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                                </path>
-                            </svg>
-                        </button>
-                        <div class="price-tag">$37.00</div>
-                    </div>
-                    <h3 class="product-name">Line Pattern Black H...</h3>
-                    <p class="product-brand">AS’s Brand</p>
-                </div>
-
-            </div>
-        </div>
-    </main>
-    <br>
-    <div>
-        <section class="text-section container">
-            <h2 class="section-title">Clothing for Women Online in India</h2>
-            <p class="section-subtitle">Reexplore Women's Clothing Collection Online at Euphoria</p>
-            <div class="section-content">
-                <p>Women's Clothing - Are you searching for the best website to buy Clothing for Women online in India?
-                    Well, your search for the coolest and most stylish women's clothing ends here. From trendy Casual
-                    Women's Wear Online shopping to premium quality cotton women's apparel. **Euphoria** has closet of
-                    Women Collection covered with the latest and best designs of Women's Clothing Online.</p>
-                <p>Our collection of clothes for women will make you the trendsetter with an iconic resemblance of
-                    choice in Women's Wear.</p>
-                <p><strong>One-Stop Destination to Shop Every Clothing for Women: Euphoria</strong></p>
-                <p>Today, Clothing for Women is gaining more popularity above all. This is because gone are the days
+                <p class="section-text">
+                    Today, Clothing for Women is gaining more popularity above all. This is because gone are the days
                     when women were used to carrying uncomfortable fashion. Today, a lady looks prettier when she is in
-                    Casual Women's Wear which is a comfortable outfit. Concerning this, **Euphoria** has a big fat range
-                    of Stylish Women's Clothing that would make her the winner wherever she goes.</p>
-                <p>Our collection of clothes for women will make you the trendsetter with an iconic resemblance of
-                    choice in Women's Wear. It is quite evident to say that there are very few Women's Clothing online
-                    stores where you can buy Western Wear for Women comprising the premium material and elegant design
-                    that you are always seeking for. Basically.</p>
-            </div>
-            <a href="#" class="see-more">See More</a>
-        </section>
+                    Casual Womens Wear which is a comfortable outfit. Concerning this, <strong>Euphoria has a big fat
+                        range of Stylish Women's Clothing that would make her the winner wherever she goes.</strong>
+                </p>
 
-        <section class="price-section container">
-            <h2 class="section-title">Buy Women's Clothing at Best Price</h2>
-            <table class="price-table">
-                <thead>
-                    <tr>
-                        <th>Women's Clothing</th>
-                        <th>Best Price</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Pick Any 4 - Womens Plain T-shirt Combo</td>
-                        <td>₹1099</td>
-                    </tr>
-                    <tr>
-                        <td>Pick Any 4 - Plain Womens Boxer Combo</td>
-                        <td>₹1099</td>
-                    </tr>
-                    <tr>
-                        <td>Pick Any 4 - Women Plain Full Sleeve T-shirt Combo</td>
-                        <td>₹1599</td>
-                    </tr>
-                    <tr>
-                        <td>Multicolor Checkered Long Casual Shirts for Women</td>
-                        <td>₹499</td>
-                    </tr>
-                    <tr>
-                        <td>Pick Any 2 Plain Boxy Casual Shirts for Women Combo</td>
-                        <td>₹799</td>
-                    </tr>
-                    <tr>
-                        <td>Blue Floral Anarkali Kurti</td>
-                        <td>₹599</td>
-                    </tr>
-                    <tr>
-                        <td>Jade Black Narrow Cut Flexible Women Jeggings</td>
-                        <td>₹998</td>
-                    </tr>
-                    <tr>
-                        <td>Mustard-yellow Solid Straight-Fit Women Pant</td>
-                        <td>₹499</td>
-                    </tr>
-                    <tr>
-                        <td>Women Pants Combo - Pick Any 2</td>
-                        <td>₹800</td>
-                    </tr>
-                    <tr>
-                        <td>Pista Green Solid Boxy Casual Shirts for Women</td>
-                        <td>₹449</td>
-                    </tr>
-                    <tr>
-                        <td>Plain Burgundy Womens Boxer</td>
-                        <td>₹349</td>
-                    </tr>
-                    <tr>
-                        <td>Striped Front Tie Casual Shirts for Women</td>
-                        <td>₹449</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+                <p class="section-text">
+                    Our collection of clothes for women will make you the trendsetter with an iconic resemblance of
+                    choice in Womens Wear. It is quite evident to say that there are very few Womens Clothing online
+                    stores where you can buy Western Wear for Women comprising the premium material and elegant design
+                    that you are always seeking for. Basically,
+                </p>
+
+                <a href="#" class="section-text" style="color: #807d7e; text-decoration: none;">See More</a>
+            </section>
+
+            <section class="content-section">
+                <div class="section-header-with-line">
+                    <div class="purple-line"></div>
+                    <h2 class="section-main-title">Buy Women's Clothing at Best Price</h2>
+                </div>
+
+                <div class="expandable-section">
+                    <div class="expand-header">
+                        <h3 class="expand-title">Women's Clothing</h3>
+                        <h3 class="expand-title">Best Price</h3>
+                    </div>
+
+                    <div class="price-list">
+                        <div class="price-item">
+                            <span class="price-item-name">Pick Any 4- Womens Plain T-shirt Combo</span>
+                            <span class="price-item-cost">₹1099</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-item-name">Pick Any 4- Plain Womens Boxer Combo</span>
+                            <span class="price-item-cost">₹1099</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-item-name">Pick Any 4 - Women Plain Full Sleeve T-shirt Combo</span>
+                            <span class="price-item-cost">₹1399</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-item-name">Multicolor Checkered Long Casual Shirts for Women</span>
+                            <span class="price-item-cost">₹499</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-item-name">Pick Any 2: Plain Boxy Casual Shirts for Women Combo</span>
+                            <span class="price-item-cost">₹799</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-item-name">Blue Floral Anarkali Kurti</span>
+                            <span class="price-item-cost">₹599</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-item-name">Jade Black Narrow Cut Flexible Women Jeggings</span>
+                            <span class="price-item-cost">₹998</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-item-name">Mustard-yellow Solid Straight-Fit Women Pant</span>
+                            <span class="price-item-cost">₹499</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-item-name">Women Pants Combo - Pick Any 2</span>
+                            <span class="price-item-cost">₹800</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-item-name">Pista Green Solid Boxy Casual Shirts for Women</span>
+                            <span class="price-item-cost">₹449</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-item-name">Plain Burgundy Womens Boxer</span>
+                            <span class="price-item-cost">₹349</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-item-name">Striped Front Tie Casual Shirts for Women</span>
+                            <span class="price-item-cost">₹449</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-sections">
+                        <div class="footer-section">
+                            <h4 class="footer-title">Need Help</h4>
+                            <nav class="footer-links">
+                                <a href="#" class="footer-link">Contact Us</a>
+                                <a href="#" class="footer-link">Track Order</a>
+                                <a href="#" class="footer-link">Returns & Refunds</a>
+                                <a href="#" class="footer-link">FAQ's</a>
+                                <a href="#" class="footer-link">Career</a>
+                            </nav>
+                        </div>
+
+                        <div class="footer-section">
+                            <h4 class="footer-title">Company</h4>
+                            <nav class="footer-links">
+                                <a href="#" class="footer-link">About Us</a>
+                                <a href="#" class="footer-link">euphoria Blog</a>
+                                <a href="#" class="footer-link">euphoriastan</a>
+                                <a href="#" class="footer-link">Collaboration</a>
+                                <a href="#" class="footer-link">Media</a>
+                            </nav>
+                        </div>
+
+                        <div class="footer-section">
+                            <h4 class="footer-title">More Info</h4>
+                            <nav class="footer-links">
+                                <a href="#" class="footer-link">Term and Conditions</a>
+                                <a href="#" class="footer-link">Privacy Policy</a>
+                                <a href="#" class="footer-link">Shipping Policy</a>
+                                <a href="#" class="footer-link">Sitemap</a>
+                            </nav>
+                        </div>
+
+                        <div class="footer-section">
+                            <h4 class="footer-title">Location</h4>
+                            <div class="footer-links">
+                                <p class="footer-link">support@euphoria.in</p>
+                                <p class="footer-link">Eklingpura Chouraha, Ahmedabad Main Road</p>
+                                <p class="footer-link">(NH 8- Near Mahadev Hotel) Udaipur, India- 313002</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 24px;">
+                        <img src="../Images/img_footer_logo.png" alt="Euphoria Logo"
+                            style="width: 178px; height: 36px;" />
+
+                        <div class="app-downloads">
+                            <a href="#" class="app-store-btn">
+                                <img src="../Images/img_group_teal_300.svg" alt="Google Play"
+                                    style="width: 28px; height: 32px;" />
+                                <div class="app-text">
+                                    <span class="app-text-small">android app on</span>
+                                    <span class="app-text-large">Google Play</span>
+                                </div>
+                            </a>
+
+                            <a href="#" class="app-store-btn">
+                                <img src="../Images/img_group_white_a700.svg" alt="App Store"
+                                    style="width: 20px; height: 30px;" />
+                                <div class="app-text">
+                                    <span class="app-text-small">Available on the</span>
+                                    <span class="app-text-large">App Store</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer-bottom">
+                        <div class="footer-divider"></div>
+                        <div
+                            style="display: flex; justify-content: space-between; align-items: center; width: 100%; margin-top: 20px;">
+                            <h4 class="footer-title">Popular Categories</h4>
+                            <img src="../Images/img_icon.svg" alt="expand" style="width: 16px; height: 6px;" />
+                        </div>
+                        <div class="footer-divider"></div>
+                        <p class="copyright">Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.hamburger').addEventListener('click', function () {
+            const navMenu = document.querySelector('.nav-menu');
+            navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
+        });
 
-    <!-- Footer Section -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-grid">
-                <div class="footer-column">
-                    <h3 class="column-title">Need Help</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Track Order</a></li>
-                        <li><a href="#">Returns & Refunds</a></li>
-                        <li><a href="#">FAQ's</a></li>
-                        <li><a href="#">Career</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3 class="column-title">Company</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">euphoria Blog</a></li>
-                        <li><a href="#">euphoriastan</a></li>
-                        <li><a href="#">Collaboration</a></li>
-                        <li><a href="#">Media</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3 class="column-title">More Info</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">Term and Conditions</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Shipping Policy</a></li>
-                        <li><a href="#">Sitemap</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3 class="column-title">Location</h3>
-                    <address class="location-info">
-                        <a href="mailto:support@euphoria.in">support@euphoria.in</a>
-                        <p>Eklingpura Chouraha, Ahmedabad Main Road</p>
-                        <p>(NH 8- Near Mahadev Hotell Udaipur, India- 313002</p>
-                    </address>
-                </div>
-            </div>
+        // Color swatch selection
+        document.querySelectorAll('.color-swatch').forEach(swatch => {
+            swatch.addEventListener('click', function () {
+                document.querySelectorAll('.color-swatch').forEach(s => s.style.border = 'none');
+                this.style.border = '2px solid #3c4242';
+            });
+        });
 
-            <div class="footer-bottom">
-                <div class="social-media">
-                    <a href="https://facebook.com" aria-label="Facebook"><img src="../Images/facebook-logo.png"
-                            alt="Facebook"></a>
-                    <a href="https://instagram.com" aria-label="Instagram"><img src="../Images/instagram-logo"
-                            alt="Instagram"></a>
-                    <a href="https://twitter.com" aria-label="Twitter"><img src="../Images/twitter-logo.png"
-                            alt="Twitter"></a>
-                    <a href="https://linkedin.com" aria-label="LinkedIn"><img src="../Images/logo-linkedin.png"
-                            alt="LinkedIn"></a>
-                </div>
-                <div class="download-app">
-                    <h3 class="download-title">Download The App</h3>
-                    <div class="app-links">
-                        <a href="https://play.google.com/store" aria-label="Google Play Store"><img
-                                src="../Images/logo-play-store.png" alt="Android App on Google Play"></a>
-                        <a href="https://www.apple.com/app-store/" aria-label="Apple App Store"><img
-                                src="../Images/App-Store-Logo.png" alt="Available on the App Store"></a>
-                    </div>
-                </div>
-            </div>
+        // Size button selection
+        document.querySelectorAll('.size-btn').forEach(btn => {
+            btn.addEventListener('click', function () {
+                document.querySelectorAll('.size-btn').forEach(b => {
+                    b.style.backgroundColor = 'white';
+                    b.style.color = '#3c4242';
+                });
+                this.style.backgroundColor = '#3c4242';
+                this.style.color = 'white';
+            });
+        });
 
-            <div class="popular-categories">
-                <h3 class="popular-title">Popular Categories</h3>
-                <span class="dropdown-icon">&#9660;</span>
-            </div>
-
-            <div class="copyright">
-                <p>Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="../bootstrap/js/bootstrap.min.js"></script>
+        // Product favorite toggle
+        document.querySelectorAll('.favorite-btn').forEach(btn => {
+            btn.addEventListener('click', function () {
+                this.style.opacity = this.style.opacity === '0.5' ? '1' : '0.5';
+            });
+        });
+    </script>
+    <script type="module"
+        src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fomarsapp9642back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
 </body>
 
 </html>
