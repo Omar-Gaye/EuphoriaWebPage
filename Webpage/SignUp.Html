@@ -1,101 +1,129 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Euphoria - Sign Up</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../StylesCss/SignUp.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../StylesCss/SignUp.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
 </head>
+
 <body>
-
-<nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container-fluid py-2">
-        <a class="navbar-brand ms-4" href="#">
-            <img src="../Images/logo.png" alt="Euphoria Logo" class="logo"> 
-        </a>
-        <div class="d-flex me-4">
-            <span class="nav-item dropdown d-flex align-items-center me-3">
-                <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    English (united states)
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid py-2">
+            <a class="navbar-brand ms-4" href="HomePage.html">
+                <img src="../Images/logo.png" alt="Euphoria Logo" class="logo" />
+            </a>
+            <div class="d-flex me-4">
+                <span class="nav-item dropdown d-flex align-items-center me-3">
+                    <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        English (united states)
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                        <li><a class="dropdown-item" href="#">French (France)</a></li>
+                        <li><a class="dropdown-item" href="#">Spanish (Spain)</a></li>
+                    </ul>
+                </span>
+                <a href="../Webpage/SignIn.html">
+                    <button class="btn btn-login me-2">Login</button>
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-                    <li><a class="dropdown-item" href="#">French (France)</a></li>
-                    <li><a class="dropdown-item" href="#">Spanish (Spain)</a></li>
-                </ul>
-            </span>
-            <button class="btn btn-login me-2">Login</button>
-            <button class="btn btn-signup">Sign Up</button>
-        </div>
-    </div>
-</nav>
-
-<div class="container-fluid main-content">
-    <div class="row g-0 h-100">
-        <div class="col-md-6 d-none d-md-block p-0">
-            <div class="image-container">
-                <img id="random-image" src="../Images/SignUp.jpg" alt="Fashion image" class="img-fluid h-100 w-100">
+                <a href="../Webpage/SignUp.Html">
+                    <button class="btn btn-signup">Sign Up</button>
+                </a>
             </div>
         </div>
-        <div class="col-md-6 d-flex align-items-center justify-content-center p-5">
-            <div class="signup-card w-100">
-                <h2 class="mb-2">Sign Up</h2>
-                <p class="text-muted sub-heading mb-4">Sign up for free to access to in any of our products</p>
+    </nav>
 
-                <button class="btn btn-social btn-google mb-3">
-                    <img src="../Images/Google.png" alt="Google logo" class="me-2">
-                    Continue With Google
-                </button>
-                <button class="btn btn-social btn-twitter mb-4">
-                    <img src="../Images/twitter-logo.png" alt="Twitter logo" class="me-2">
-                    Continue With Twitter
-                </button>
-
-                <div class="divider d-flex align-items-center my-4">
-                    <span class="text-center mx-3 text-muted">OR</span>
+    <div class="container-fluid main-content">
+        <div class="row g-0 h-100">
+            <div class="col-md-6 d-none d-md-block p-0">
+                <div class="image-container">
+                    <img id="random-image" src="../Images/SignUp.jpg" alt="Fashion image"
+                        class="img-fluid h-100 w-100" />
                 </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-center justify-content-center p-5">
+                <div class="signup-card w-100">
+                    <h2 class="mb-2">Sign Up</h2>
+                    <p class="text-muted sub-heading mb-4">
+                        Sign up for free to access to in any of our products
+                    </p>
 
-                <form>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email Address</label>
-                        <input type="email" class="form-control" id="email" placeholder="designer@gmail.com">
-                        <small class="error-message">Error Message</small>
-                    </div>
-                    <div class="mb-3">
-                        <label for="password" class="form-label d-flex justify-content-between align-items-center">
-                            <span>Password</span>
-                            <span class="text-muted hide-link">Hide</span>
-                        </label>
-                        <input type="password" class="form-control" id="password" placeholder="">
-                        <small class="form-text text-muted password-help">Use 8 or more characters with a mix of letters, numbers & symbols</small>
+                    <a
+                        href="https://r.search.yahoo.com/_ylt=Awr.rFRtccFo7wEAxDYk24lQ;_ylu=Y29sbwNpcjIEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1758717549/RO=10/RU=https%3a%2f%2faccounts.google.com%2flogin%3fhl%3dfr/RK=2/RS=fyVqfX_PX7H7Lcckdc2XshDZYsI-">
+                        <button class="btn btn-social btn-google mb-3">
+                            <img src="../Images/Google.png" alt="Google logo" class="me-2" />
+                            Continue With Google
+                        </button>
+                    </a>
+                    <a
+                        href="https://r.search.yahoo.com/_ylt=Awr.oCmNccFoEgIAPKAk24lQ;_ylu=Y29sbwNpcjIEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1758717581/RO=10/RU=https%3a%2f%2ftwitter.com%2flogin/RK=2/RS=fj13GlK0DKjslWga7XOLf8sQo_k-">
+                        <button class="btn btn-social btn-twitter mb-4">
+                            <img src="../Images/twitter-logo.png" alt="Twitter logo" class="me-2" />
+                            Continue With Twitter
+                        </button>
+                    </a>
+
+                    <div class="divider d-flex align-items-center my-4">
+                        <span class="text-center mx-3 text-muted">OR</span>
                     </div>
 
-                    <div class="form-check mb-2">
-                        <input class="form-check-input" type="checkbox" value="" id="agreeTerms">
-                        <label class="form-check-label" for="agreeTerms">
-                            Agree to our <a href="#">Terms of use</a> and <a href="#">Privacy Policy</a>
-                        </label>
-                    </div>
-                    <div class="form-check mb-4">
-                        <input class="form-check-input" type="checkbox" value="" id="subscribeNewsletter">
-                        <label class="form-check-label" for="subscribeNewsletter">
-                            Subscribe to our monthly newsletter
-                        </label>
-                    </div>
-                    <div class="d-grid gap-2">
-                        <button type="submit" class="btn btn-primary btn-signup-form">Sign Up</button>
-                    </div>
-                </form>
+                    <form>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder="designer@gmail.com" />
+                            <small class="error-message">Error Message</small>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label d-flex justify-content-between align-items-center"
+                                aria-required="true">
+                                <span>Password</span>
+                                <span class="text-muted hide-link">Hide</span>
+                            </label>
+                            <input type="password" class="form-control" id="password" placeholder="" />
+                            <small class="form-text text-muted password-help">Use 8 or more characters with a mix of
+                                letters, numbers
+                                &
+                                symbols</small>
+                        </div>
 
-                <p class="text-center mt-3 already-account">Already have an account? <a href="#">Log In</a></p>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" value="" id="agreeTerms" />
+                            <label class="form-check-label" for="agreeTerms">
+                                Agree to our <a href="HomePage.html">Terms of use</a> and
+                                <a href="HomePage.html">Privacy Policy</a>
+                            </label>
+                        </div>
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" value="" id="subscribeNewsletter" />
+                            <label class="form-check-label" for="subscribeNewsletter">
+                                Subscribe to our monthly newsletter
+                            </label>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <a href="CheckEmail.html">
+                                <button type="submit" class="btn btn-primary btn-signup-form">
+                                    Sign Up
+                                </button>
+                            </a>
+                        </div>
+                    </form>
+
+                    <p class="text-center mt-3 already-account">
+                        Already have an account?
+                        <a href="../Webpage/SignIn.html">Log In</a>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
