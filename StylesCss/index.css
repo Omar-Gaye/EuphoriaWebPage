@@ -142,11 +142,12 @@ img {
 /* Hero Section */
 .hero-slider {
   position: relative;
-  width: 1448px;
-  height: 716px;
+  width: 100%;              /* prend toute la largeur dispo */
+  max-width: 1448px;        /* limite la largeur max sur grands écrans */
+  aspect-ratio: 2 / 1;      /* garde les proportions (716/1448 ≈ 2/1) */
   margin: auto;
   border-radius: 5px;
-  border-width: 1px;
+  border: 1px solid #ccc;   /* border-width seul ne suffit pas */
   opacity: 1;
   background-image: url("../Images/img_shophero1productslide1.png");
   background-size: cover;
