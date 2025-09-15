@@ -17,30 +17,47 @@
 
     <nav class="navbar navbar-expand-lg bg-white sticky-top">
         <div class="container-fluid mx-lg-5">
-            <a class="navbar-brand d-flex align-items-center" href="../index.html">
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="./index.html">
                 <img src="../Images/logo.png" alt="Logo Euphoria" class="me-2">
-                <!-- <span class="logo-text">Euphoria</span> -->
             </a>
-            <div class="d-flex align-items-center ms-auto">
-                <ul class="navbar-nav me-3 d-none d-lg-flex">
-                    <li class="nav-item"><a class="nav-link" href="ProductsListPage.html">Shop</a></li>
-                    <li class="nav-item"><a class="nav-link" href="ProductsListPage.html">Men</a></li>
-                    <li class="nav-item"><a class="nav-link" href="ProductsListPage.html">Women</a></li>
-                    <li class="nav-item"><a class="nav-link" href="ProductsListPage.html">Combos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="ProductsListPage.html">Joggers</a></li>
+
+            <!-- Bouton hamburger visible sur petit écran -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu collapsable -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <!-- Liens de navigation -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="./Webpage/ProductsListPage.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./Webpage/ProductsListPage.html">Men</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="./Webpage/ProductsListPage.html">Women</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="./Webpage/ProductsListPage.html">Combos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./Webpage/ProductsListPage.html">Joggers</a></li>
                 </ul>
-                <div class="search-box me-3 d-none d-lg-flex">
-                    <i class="bi bi-search me-2"></i>
-                    <input type="text" class="form-control-plaintext" placeholder="Search">
-                </div>
+
+                <!-- Barre de recherche -->
+                <form class="d-flex me-3">
+                    <div class="search-box d-flex align-items-center">
+                        <i class="bi bi-search me-2"></i>
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                </form>
+
+                <!-- Icônes -->
                 <div class="d-flex align-items-center">
-                    <a href="wishlist.html" class="btn btn-icon me-2"><i class="bi bi-heart"></i></a>
-                    <a href="SignIn.html" class="btn btn-icon me-2"><i class="bi bi-person"></i></a>
-                    <a href="CartPage.html" class="btn btn-icon btn-cart"><i class="bi bi-cart"></i></a>
+                    <a href="./Webpage/Emptywishlist.html" class="btn btn-icon me-2"><i class="bi bi-heart"></i></a>
+                    <a href="./Webpage/SignIn.html" class="btn btn-icon me-2"><i class="bi bi-person"></i></a>
+                    <a href="./Webpage/EmptyCart.html" class="btn btn-icon btn-cart"><i class="bi bi-cart"></i></a>
                 </div>
             </div>
         </div>
     </nav>
+
 
     <main class="container-fluid main-content-confirmed d-flex justify-content-center align-items-center">
         <div class="confirmed-box text-center p-5 rounded-3">
