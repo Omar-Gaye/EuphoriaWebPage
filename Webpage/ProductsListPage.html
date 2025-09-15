@@ -27,6 +27,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
+
             <!-- Menu collapsable -->
             <div class="collapse navbar-collapse" id="navbarContent">
                 <!-- Liens de navigation -->
@@ -684,12 +685,6 @@
     </div>
 
     <script>
-        // Mobile menu toggle
-        document.querySelector('.hamburger').addEventListener('click', function () {
-            const navMenu = document.querySelector('.nav-menu');
-            navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
-        });
-
         // Color swatch selection
         document.querySelectorAll('.color-swatch').forEach(swatch => {
             swatch.addEventListener('click', function () {
@@ -701,14 +696,11 @@
         // Size button selection
         document.querySelectorAll('.size-btn').forEach(btn => {
             btn.addEventListener('click', function () {
-                document.querySelectorAll('.size-btn').forEach(b => {
-                    b.style.backgroundColor = 'white';
-                    b.style.color = '#3c4242';
-                });
-                this.style.backgroundColor = '#3c4242';
-                this.style.color = 'white';
+                document.querySelectorAll('.size-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
             });
         });
+
 
         // Product favorite toggle
         document.querySelectorAll('.favorite-btn').forEach(btn => {
@@ -717,6 +709,7 @@
             });
         });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script type="module"
         src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fomarsapp9642back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
 </body>
